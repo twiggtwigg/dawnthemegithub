@@ -91,7 +91,7 @@
   color: {{ section.settings.color-transparent }} !important;
     }
     {% endif %}
-    
+
   }
 </style>
 
@@ -480,18 +480,6 @@
 
 {% schema %}
 
-  ,{
-      "type": "checkbox",
-      "id": "enable_transparent-header",
-      "label": "Enable Transparent Header",
-      "default": false
-    },
-    {
-      "type": "text",
-      "id": "color-transparent",
-      "label": "Transparent Color"
-    }
-
 {
   "name": "t:sections.header.name",
   "class": "section-header",
@@ -686,6 +674,16 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
+    },   ,{
+      "type": "checkbox",
+      "id": "enable_transparent-header",
+      "label": "Enable Transparent Header",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "color-transparent",
+      "label": "Transparent Color"
     }
   ],
   "blocks": [
