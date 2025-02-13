@@ -1,0 +1,236 @@
+{%- style -%}
+    .section-shop-regions {
+     margin: 0;
+    }
+   .section-shop-regions__container {
+     display: flex;
+     align-items: flex-start;
+     gap: 8px;
+   }
+   .section-shop-regions__info {
+    padding: 30px 53px;
+    background: #000000;
+    width: 100%;
+    Display:flex;
+    gap: 3rem;
+   }
+   .section-shop-regions__info h2 {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 29px;
+    line-height: 39px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+
+   }
+   .section-shop-regions__info h4 {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 0.6px;
+    color: #fff;
+    margin: 0;
+    font-style: normal;
+   }
+   .section-shop-regions__info p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 0.6px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 32px;
+
+
+   }
+   .section-shop-regions__info a {
+    text-decoration: auto;
+    padding: 14px 17px;
+    border: 1px solid #fff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+   }
+   .section-shop-regions__collections {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+   }
+   .section-shop-regions__collections > div {
+    height: 100%;
+   }
+   .section-shop-regions__collections > div img {
+    height: 100%;
+   }
+  .section-shop-regions__collections > div a {
+    height: 100%;
+    display: block;
+  }
+   .region-item {
+    display: none;
+   }
+   .region-item.active {
+    display: block;
+   }
+   .section-shop-regions__info-address span {
+    color: #fff;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.6px;
+    margin: 0;
+   }
+   .section-shop-regions__info-address > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+   }
+   .section-shop-regions__info-heading > svg {
+    display: none;
+   }
+   @media screen and (max-width: 1300px) {
+    .section-shop-regions__container {
+        flex-direction: column;
+        height: auto;
+    }
+    .section-shop-regions__info {
+        width: 100%;
+        padding: 33px 12px 33px 28px;
+    }
+    .section-shop-regions__info h2 {
+        font-size: 15px;
+    }
+    .section-shop-regions__info-address > div {
+        margin: 0;
+    }
+    .section-shop-regions__info-address > div > svg {
+        display: none;
+    }
+    .section-shop-regions__info-address span {
+        font-size: 13px;
+    }
+    .section-shop-regions__collections {
+        width: 100%;
+    }
+    .section-shop-regions__info-heading > svg {
+        display: block;
+    }
+    .section-shop-regions__info-heading {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+   }
+   @media screen and (max-width: 800px) {
+    .section-shop-regions__collections {
+        padding: 0 15px;
+    }
+     .section-shop-regions__collections > div img {
+    height: auto;
+   }
+   }
+  @media screen and (max-width: 767px) {
+    .section-shop-regions__info-address span {
+        font-size: 11px;
+    }
+  }
+  @media screen and (max-width: 474px) {
+    .section-shop-regions__info-address span {
+        font-size: 9px;
+    }
+       .section-shop-regions__info {
+    Display:block;
+   }
+  }
+{%- endstyle -%}
+  <div class="section-shop-regions">
+    {% for metaobject in shop.metaobjects.canada_regions.values %}
+        <div class="region-item section-shop-regions__container page-width-desktop region-{{ metaobject.region_name.value | downcase}}" data-phone="{{ metaobject.phone.value }}">
+            <div class="section-shop-regions__info">
+               <div> <div class="section-shop-regions__info-heading">
+                    <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 8.42169C16 12.8329 8 21.9998 8 21.9998C8 21.9998 0 12.8329 0 8.42169C0 4.01052 3.58172 0.43457 8 0.43457C12.4183 0.43457 16 4.01052 16 8.42169Z" fill="#E1201C"/>
+                        <circle cx="8.00047" cy="8.43504" r="5.21739" fill="black"/>
+                    </svg>
+                    <h2>{{ metaobject.heading.value }}</h2>
+                </div>
+                <div class="section-shop-regions__info-address">
+                    <div>
+                        <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 8.42169C16 12.8329 8 21.9998 8 21.9998C8 21.9998 0 12.8329 0 8.42169C0 4.01052 3.58172 0.43457 8 0.43457C12.4183 0.43457 16 4.01052 16 8.42169Z" fill="#E1201C"/>
+                        <circle cx="8.00047" cy="8.43504" r="5.21739" fill="black"/>
+                        </svg>
+                        <span>{{ metaobject.address.value }}</span>
+                    </div>
+                    <svg style="position: relative; top: -7px;" width="520" height="11" viewBox="0 0 520 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M518.643 10.8536C365.636 4.30788 109.382 3.10226 0.781412 3.90707L0.621688 1.06279C109.237 0.257863 365.33 0.284713 519.521 6.8811L518.643 10.8536Z" fill="#DF211C"/>
+                    </svg>
+                </div></div>
+                <div><h4>{{ metaobject.body_heading.value }}</h4>
+                <p>{{ metaobject.description.value }}</p>
+                <a href="{{ metaobject.button_url.value }}">
+                    {{ metaobject.button_text.value }}
+                </a></div>
+            </div>
+            <div class="section-shop-regions__collections">
+                {% if metaobject.collection_1_image.value != blank%}
+                <div>
+                    <a href="{{ metaobject.collection_1_url_final.value.url }}">
+                        <img src="{{ metaobject.collection_1_image.value | img_url: '500x' }}" />
+                    </a>
+                </div>
+                 {%endif%}
+                {% if metaobject.collection_2_image.value != blank%}
+                <div>
+                    <a href="{{ metaobject.collection_2_url_final.value.url }}">
+                        <img src="{{ metaobject.collection_2_image.value | img_url: '500x' }}" />
+                    </a>
+                </div>
+                 {%endif%}
+                {% if metaobject.third_feature_image.value != blank%}
+                 <div>
+                    <a href="{{ metaobject.third_feature.value.url }}">
+                        <img src="{{ metaobject.third_feature_image.value | img_url: '500x' }}" />
+                    </a>
+                </div>
+                {%endif%}
+                {% if metaobject.forth_feature_image.value != blank%}
+                 <div>
+                    <a href="{{ metaobject.fourth_feature.value.url }}">
+                        <img src="{{ metaobject.forth_feature_image.value | img_url: '500x' }}" />
+                    </a>
+                </div>
+                {%endif%}
+
+
+            </div>
+        </div>
+    {% endfor %}
+  </div>
+  
+  {% schema %}
+  {
+    "name": "Shop Regions",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      
+    ],
+    "presets": [
+      {
+        "name": "Shop Regions"
+      }
+    ]
+  }
+  {% endschema %}
+  

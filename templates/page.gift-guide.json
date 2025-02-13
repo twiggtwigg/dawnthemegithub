@@ -1,0 +1,124 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "collection_list_R3kmzr": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_iejAyE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gifts-for-home-cooks"
+          }
+        },
+        "featured_collection_r3WPWD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gifts-for-foodies"
+          }
+        },
+        "featured_collection_AyhhDC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gifts-for-the-professional"
+          }
+        },
+        "featured_collection_rVX9Bt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "stocking-stuffers-under-50"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_iejAyE",
+        "featured_collection_r3WPWD",
+        "featured_collection_AyhhDC",
+        "featured_collection_rVX9Bt"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "accent-2",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "featured_collection_UzwrwV": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Popular gifts for the holidays from Knifewear",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "knifewear-gift-guide",
+        "products_to_show": 10,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ep_multicolumn_rEM4mx": {
+      "type": "ep-multicolumn",
+      "settings": {
+        "title": "Multicolumn",
+        "content_source": "related-articles",
+        "metaobject-name": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "block_limit": 3,
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collection_list_R3kmzr",
+    "featured_collection_UzwrwV",
+    "ep_multicolumn_rEM4mx"
+  ]
+}

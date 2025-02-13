@@ -1,0 +1,158 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
+      "settings": {}
+    },
+    "ep_blog_feature_products_qzqkCG": {
+      "type": "ep-blog-feature-products",
+      "blocks": {
+        "product_UKf9QW": {
+          "type": "product",
+          "settings": {
+            "featured_product": "nigara-vg10-tsuchime-damascus-bunka-180mm-1",
+            "text": "<p>We're big fans of VG10 steel at Knifewear. It gets sharp like a lightsaber and holds an edge with the best of them while being a little less delicate than high-carbon steels! I love the elegant swoosh along the spine of this knife and the rain-like tsuchime pattern on tjhe blade. The guys at Nigara really know their stuff: they've been making knives for 350 years.</p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "product_hyHnKq": {
+          "type": "product",
+          "settings": {
+            "featured_product": "masakage-zero-bunka-170mm",
+            "text": "<p>Now that's a spicy meatball! Just look at that gorgeous knife. Hammered steel, a stunning Desert Ironwood handle, everything you want in a high-quality kitchen tool. We love Masakage knives, both for their good looks and their awesome performance!</p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "product_NQ6ETw": {
+          "type": "product",
+          "settings": {
+            "featured_product": "hazaki-pro-series-bunka-180mm",
+            "text": "<p>I've got a lot of love for Hazaki knives. Their blades are made in Seki by a team of expert craftspeople then handled by woodworkers in Quebec using Canadian hardwoods. They cut like crazy, don't need a lot of care, and look stunning in your kitchen!</p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "product_KERz6d": {
+          "type": "product",
+          "settings": {
+            "featured_product": "hado-shiosai-bunka-180mm",
+            "text": "<p>Man, this is such an elegant knife. The clean polish, the tasteful hammered tsuchime pattern on the blade. HADO knives are really in a league of their own, and their choice of SG2 steel for this line only accentuates that. This steel is as futuristic as this blade looks, cutting just as well as the carbon steels of olde, but totally rust-free. </p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "product_DpWMD7": {
+          "type": "product",
+          "settings": {
+            "featured_product": "miyazaki-kajiya-tsubaki-aogami-stainless-kurouchi-tsuchime-hakata-180mm",
+            "text": "<p>We had to give a shoutout to the Hakata, the regional cousin of the bunka from Kyushu. Hakata is the old name for Fukuoka, and some blacksmiths in the area specialize in making this one shape. This particular one comes from Miyazaki-san, a bright young blacksmith who brings classic knife-making techniques into the modern age.</p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_UKf9QW",
+        "product_hyHnKq",
+        "product_NQ6ETw",
+        "product_KERz6d",
+        "product_DpWMD7"
+      ],
+      "settings": {
+        "layout": "large",
+        "hide-price": false
+      }
+    },
+    "rich_text_WVDxgC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gCHHce": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Need even more bunka love in your life? Don’t worry, we’ve got you covered - check out my homie Alex’s <a href=\"https://knifewear.com/blogs/articles/ko-bunka-v-s-petty-whats-the-best-knife\">blog about Pettys and Ko-bunkas right here,</a> or if you’re ready to dive right in and get your mitts on one, <a href=\"https://knifewear.com/collections/bunka\">click here to shop!</a></p>"
+          }
+        },
+        "button_WrWdee": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find all out bunkas here",
+            "button_link": "shopify://collections/bunka",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_gCHHce",
+        "button_WrWdee"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "ep_blog_author_nraKRt": {
+      "type": "ep-blog-author",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "ep_blog_feature_products_qzqkCG",
+    "rich_text_WVDxgC",
+    "ep_blog_author_nraKRt"
+  ]
+}

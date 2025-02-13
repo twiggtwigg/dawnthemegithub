@@ -1,0 +1,53 @@
+  {% capture blacksmithHandle %}{{product.metafields.knifeStats.blacksmith | handle }} {% endcapture %}
+  {% capture blacksmithAbout %}About {{product.metafields.knifeStats.blacksmith}}{% endcapture %}
+  {% capture sharpenerHandle %}{{product.metafields.knifeStats.sharpener | handle }} {% endcapture %}
+  {% capture shapeHandle %}{{product.metafields.knifeStats.shape | handle }} {% endcapture %}
+  {% capture brandHandle %}{{ product.vendor | handle }} {% endcapture %}
+  {% capture vendorAbout %}About {{product.vendor}}{% endcapture %}
+  {% capture KnifeLineAbout %}About {{product.metafields.knifeStats.knifeLine}}{% endcapture %}
+
+  {% assign collectionShape = collections[shapeHandle] %}
+  {% assign collectionBlacksmith = collections[blacksmithHandle] %}
+  {% assign collectionSharpener = collections[sharpenerHandle] %}
+  {% assign collectionHandle = collections[brandHandle] %}
+
+
+    {% if product.description == blank %} 
+
+    {% if product.metafields.knifeStats.blacksmith != blank and product.metafields.knifeStats.knifeline == blank and collectionBlacksmith.metafields.coll.shortDescription != blank %}
+      <p>
+        <b>About {{ product.metafields.knifeStats.blacksmith }} -  </b>
+        {{- collectionBlacksmith.metafields.coll.shortDescription }}
+      </p>
+
+    {% elsif product.metafields.knifeStats.sharpener != blank and collectionSharpener.metafields.coll.shortDescription != blank
+    %}
+      <p>
+        <b>About {{ product.metafields.knifeStats.sharpener }} -  </b>
+        {{- collectionSharpener.metafields.coll.shortDescription }}
+      </p>
+
+    {% else%}
+
+    {% if collectionHandle.metafields.coll.shortDescription != blank %}
+      <p>
+        <b>About {{ product.vendor }} -  </b>{{ collectionHandle.metafields.coll.shortDescription }}
+      </p>
+     {% endif %}    
+
+
+    {% endif %}
+
+
+
+  {% endif %}
+
+
+
+{% if product.metafields.knifeStats.shape != blank %}
+    {% if product.description contains 'About the shape' or product.description contains 'About the Shape' %}
+      <!-- silence is golden -->
+    {% elsif product.metafields.knifeStats.shape != blank %}
+      <p><b>About the Shape - </b>{{ collectionShape.metafields.coll.shortDescription }}</p>
+    {% endif %}
+{% endif %}

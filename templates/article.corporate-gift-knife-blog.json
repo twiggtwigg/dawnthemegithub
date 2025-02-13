@@ -1,0 +1,166 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image_3ACTzg": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "small"
+          }
+        },
+        "title_ADTDeb": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share_rCaXVQ": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content_GFXHFw": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "featured_image_3ACTzg",
+        "title_ADTDeb",
+        "share_rCaXVQ",
+        "content_GFXHFw"
+      ],
+      "settings": {}
+    },
+    "dab64165-db66-4e0d-a2f5-8dd52bbf611a": {
+      "type": "ep-blog-feature-products",
+      "blocks": {
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-0": {
+          "type": "product",
+          "settings": {
+            "featured_product": "haruyuki-goma-santoku-180mm",
+            "text": "<p>Easily our most popular knife shape is the Santoku. It’s a little smaller, around 7” or so, so it’s easily wielded by any home cook. The Goma series is flashy yet elegant, perfect for adding a little flair to youe kitchen. This is the way to go if you need a reliable kitchen knife that doesn’t break your budget, and it’s part of a larger collection that can be bought as a set.</p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "product_zYQMtP": {
+          "type": "product",
+          "settings": {
+            "featured_product": "seki-kanetsugu-vg2-heptagon-wood-santoku-170mm",
+            "text": "<p>This blade is a personal favourite,  combining the best parts of the last two knives: stunning good looks, a  minimalist Japanese wood handle, and a super functional size for <br/>everyday home cooking. The Heptagonseries speaks for itself; as soon as someone opens the box, they know they have a stunning blade in their hands. It performs as well as it looks, so it’s sure to delight for years to come!</p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "f0ecf7c3-af35-4fe9-a4d3-4481d52de45f": {
+          "type": "product",
+          "settings": {
+            "featured_product": "haruyuki-soba-nakiri-165mm",
+            "text": "<p>And now for something completely different. The nakiri excels at chopping and slicing vegetables, perfect for folks who want to cook healthier food at home! The stunning blade inspires you to spend time chopping and enjoy the cooking process.</p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-1": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "featured_product": "haruyuki-enju-petty-135mm",
+            "text": "<p>A petty knife is an excellent choice if you’re after something fancier, like the Zanpa, but you have a bit less money to spend. A 135 petty, also called a paring or utility knife, can <br/>accomplish most of the jobs a chef’s knife can and is often more approachable for folks who get nervous about big knives. The Nagisa series is quite stunning and high-performance without breaking the bank.</p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "88889df0-8812-4097-8230-e21c566d5668": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "featured_product": "haruyuki-goma-santoku-180mm",
+            "text": "<p>A big meat-slicing knife for carving  roasts on special occasions is sure to make a splash, especially around the holidays. I know I said to get a knife they’ll use daily, but a statement piece like this is guaranteed to spark conversations every time it gets used. The long-slender blade is incredible for getting thin slices of roast ham, turkey, brisket, and more.</p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-0",
+        "product_zYQMtP",
+        "f0ecf7c3-af35-4fe9-a4d3-4481d52de45f",
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-1",
+        "88889df0-8812-4097-8230-e21c566d5668"
+      ],
+      "settings": {
+        "layout": "large",
+        "hide-price": false
+      }
+    },
+    "rich_text_zPek8Y": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qm8aUe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Any of the above knives also come as  sets, so if you’re looking for a larger gift or want to build out their set in future, you’ll have your bases covered. You can check out our full range of knife sets here. While a good knife is a remarkable gift, it’s also essential to care for your blade to get the most out of it! <br/>Each knife from us comes with a comprehensive set of care instructions, but there are a few handy items you can add to your gift to help them enjoy it more:</p><p><a href=\"https://knifewear.com/collections/blade-guards-and-sayas\"><strong>Blade guard.</strong></a><br/> If they don’t have a knife block, this guard allows them to easily stash their knife in a drawer without damaging it or take it over to a friend’s house to make dinner.</p><p><a href=\"https://knifewear.com/products/ceramic-honing-rod-black?variant=39512727060654\"><strong>Honing rod.</strong></a><br/> This tool helps your knife stay sharp longer, like the classic knife steel. Steel rods are pretty hard on Japanese knives; this fine ceramic rod is much more gentle and helps your knife last a lifetime. They’re also half-price when you buy a knife!</p><p><a href=\"https://knifewear.com/collections/cutting-boards\"><strong>Cutting board.</strong></a><br/> A good cutting board should look beautiful on your counter and be good for your knife. Hard glass or bamboo boards can dull your knife prematurely, whereas a handmade wooden one helps your knife keep its edge longer! Wooden boards can also be easily engraved with your logo.</p><p>Depending on who you’re shopping for, we also have some stunning knife storage options, knife skills classes, and even Japanese cookware they may be interested in! We stand behind our products, so each knife comes with a detailed set of care instructions, a first-time free sharpening, and we have a ton of helpful YouTube videos to assist folks in getting the most out of their knife. <br/><br/>Once you’re ready to shop or have questions, visit us in-store or <a href=\"https://knifewear.com/#contact-anchor\">email us,</a> and we’ll be happy to build you the perfect gift package!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qm8aUe"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "d0160bd4-7213-4d89-8a14-6fbb1f36f0ac": {
+      "type": "ep-blog-author",
+      "settings": {}
+    },
+    "1655832228289470c4": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Recent blog posts",
+        "heading_size": "h1",
+        "blog": "articles",
+        "post_limit": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-2",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "dab64165-db66-4e0d-a2f5-8dd52bbf611a",
+    "rich_text_zPek8Y",
+    "d0160bd4-7213-4d89-8a14-6fbb1f36f0ac",
+    "1655832228289470c4"
+  ]
+}

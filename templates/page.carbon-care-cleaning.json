@@ -1,0 +1,113 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "video_tY3FyF": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=jh8tRbU3lco",
+        "cover_image": "shopify:\/\/shop_images\/maxresdefault_8d6d5966-e28b-415b-9fec-ed43ed444505.webp",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_kpRGHi": {
+      "type": "multirow",
+      "blocks": {
+        "row_GFATfX": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_8b605b5f-7941-4b92-9552-855ce4ef56f2.jpg",
+            "caption": "",
+            "heading": "What is a patina?",
+            "text": "<p>Patina is a tarnish in colour on the outer surface carbon steel. Through the formation of patina, the steel protects itself against the corrosion that naturally occurs. It is similar but diferent to the seasoning that occurs on a cast iron pan.<\/p><p>The best and easiest way to get a patina is to use your knife! Keep a cloth near your work surface, and when you notice the steel changing colour, give it a wipe before it turns orange. Just like a leather jacket your knife will wear in and develop a patina with time. A strong patina is earned, a badge to be proud of!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_xC6AYr": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ken-header_800x_2000x_82dd11a0-5b71-433c-8d91-8a39b7b3689c.webp",
+            "caption": "",
+            "heading": "Cleaning your Carbon Steel knife",
+            "text": "<p>After use, wash the knife by hand with regular dish soap, rinse with hot water  and dry by hand immediately. <em>Dishwashers are very bad for knives. - even worse for carbon steel knives.<\/em><\/p><p>If you see orange rust, remove it. The scrubby side of a sponge can do the trick.  If it’s still not coming off try baking soda and water mixed into a paste or a product called <a href=\"https:\/\/knifewear.com\/products\/barkeepers-friend-cleanser\" title=\"Bar Keepers Friend Powder Cleanser\">Bar Keepers Friend<\/a> or one our <a href=\"https:\/\/knifewear.com\/products\/knifewear-rust-eraser-1\" title=\"Knifewear Rust Eraser\">handy rust erasers<\/a>.<\/p><p><\/p><p><\/p><p><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_CqEDrg": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_5719_1024x1024_600x600_e4a484cb-3504-4054-8850-7191726e8ba3.jpg",
+            "caption": "",
+            "heading": "Troubleshooting common concerns",
+            "text": "<p>Got rust on your knife? Not sure what patina is? Don't worry! These common concerns are easy to fix. And you'll be enjoying your carbon steel knife in no time.<\/p>",
+            "button_label": "Toubleshoot now",
+            "button_link": "shopify:\/\/blogs\/articles\/knife-knowledge-basics-carbon-steel-care"
+          }
+        },
+        "row_AUmDqD": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rust_2000x_5f09ae9e-b8a4-4cbc-8d20-0a1dae95012d.jpg",
+            "caption": "",
+            "heading": "How to force a patina on your carbon steel knife",
+            "text": "<p>If you're a collector who likes to experiement with different looks on your knives, or a chef in a busy kitchen without the time to baby carbon steel, you can force a patina on your knife, skipping months of maintenance to get right to the good stuff!<\/p>",
+            "button_label": "Get Started",
+            "button_link": "shopify:\/\/blogs\/articles\/114107716-how-can-i-stop-my-carbon-steel-knife-from-rusting"
+          }
+        }
+      },
+      "block_order": [
+        "row_GFATfX",
+        "row_xC6AYr",
+        "row_CqEDrg",
+        "row_AUmDqD"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "background-1",
+        "row_color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_tY3FyF",
+    "multirow_kpRGHi"
+  ]
+}

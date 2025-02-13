@@ -1,0 +1,178 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "ep_featured_blog_HXfxa3": {
+      "type": "ep-featured-blog",
+      "settings": {
+        "heading": "See some highlights from our Youtube Channel",
+        "heading_size": "h1",
+        "blog": "articles",
+        "article_category": "youtube highlights",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ep_featured_blog_WkHBqW": {
+      "type": "ep-featured-blog",
+      "settings": {
+        "heading": "Konro and BBQ",
+        "heading_size": "h1",
+        "blog": "articles",
+        "article_category": "Konro and BBQ",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ep_featured_blog_jC4cUN": {
+      "type": "ep-featured-blog",
+      "settings": {
+        "heading": "Knife Sharpening",
+        "heading_size": "h1",
+        "blog": "articles",
+        "article_category": "Knife Sharpening",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter_6PrXfp": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_Af3nL6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stay up to date with our articles, videos and more!",
+            "heading_size": "h1"
+          }
+        },
+        "email_form_3EyWMp": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_Af3nL6",
+        "email_form_3EyWMp"
+      ],
+      "settings": {
+        "color_scheme": "inverse",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "ep_featured_blog_c8GmP3": {
+      "type": "ep-featured-blog",
+      "settings": {
+        "heading": "Knife Knowledge 101",
+        "heading_size": "h1",
+        "blog": "articles",
+        "article_category": "Knife Knowledge 101",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ep_featured_blog_dmPnT3": {
+      "type": "ep-featured-blog",
+      "settings": {
+        "heading": "How to choose a knife and other guides",
+        "heading_size": "h1",
+        "blog": "articles",
+        "article_category": "How to choose a knife and other guides",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ep_featured_blog_TyLQpy": {
+      "type": "ep-featured-blog",
+      "settings": {
+        "heading": "Blacksmiths Japan and more",
+        "heading_size": "h1",
+        "blog": "articles",
+        "article_category": "Blacksmiths Japan and more",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ep_linklist_tgcnjT": {
+      "type": "ep-linklist",
+      "settings": {
+        "menu-heading": "Blogs, articles and video categories",
+        "menu": "blog-categories",
+        "css_class": "",
+        "custom_css": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ep_linklist_tgcnjT",
+    "ep_featured_blog_HXfxa3",
+    "ep_featured_blog_WkHBqW",
+    "ep_featured_blog_jC4cUN",
+    "newsletter_6PrXfp",
+    "ep_featured_blog_c8GmP3",
+    "ep_featured_blog_dmPnT3",
+    "ep_featured_blog_TyLQpy"
+  ]
+}

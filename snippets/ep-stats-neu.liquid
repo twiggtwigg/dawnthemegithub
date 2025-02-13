@@ -1,0 +1,195 @@
+{% capture rustProne %} 
+  {%  if product.metafields.knifeStats.filterSteelMakeUp != 'Stainless Steel' and product.metafields.knifeStats.filterSteelMakeUp != blank %}
+<div class="tooltip"><a href="/pages/carbon-steel-knife-care-and-cleaning"> <b><i>{{ 'products.product.custom.rust_prone' | t }} ⓘ</b></i></a> 
+  <span class="tooltiptext">This knife can rust, click to learn more.</span>
+</div>
+    {% endif %} 
+{% endcapture %}
+
+{% capture collectionHRCurl %}{{ product.metafields.knifeStats.steel | handleize }}{% endcapture %}
+{% assign collectionHRC = collections[collectionHRCurl] %}
+
+{% assign handleDetails = product.metafields.custom.handle_prototype | split: ','%}
+
+ {% capture handleDetailsContent %} 
+  {% for handleDetail in handleDetails %}
+  
+   {% if handleDetail contains 'collar' %}
+   with {{handleDetail | remove: '"'| remove: ']' | remove: '['}}
+    {% else %}
+   {{handleDetail | remove: '"'| remove: ']' | remove: '['}}
+{% endif %}
+   
+  {% endfor %}
+{% endcapture %}  
+
+
+{% capture collectionIs404 %} {% for collection in collections %}{{ collection.title  }}{% endfor %} {% endcapture %}  
+
+
+{% assign recommended_products = product.metafields.custom.product_bundle_components.value %}
+
+
+{% if recommended_products != blank %}
+
+<div class="container">
+  <div class="section">
+
+    <h3>Set contains</h3> 
+
+      {% for product in recommended_products %}
+
+      {% capture shapeHandle %}{{product.metafields.knifeStats.shape | handle }} {% endcapture %}
+  {% assign collectionShape = collections[shapeHandle] %}
+
+  <div>
+    <h3 class="h5"><a href="{{ product.url }}">
+    {{- product.title | escape -}}</a></h3>
+
+
+{% assign yoptoreviewcount = product.metafields.yotpo.reviews_count | plus:0 %}
+
+{% if yoptoreviewcount >= 1 %}  
+      <div class="yotpo bottomLine" data-product-id="{{ product.id }}" style="margin-bottom: 10px;"></div>
+{% endif %}      
+  </div>
+
+     <div> <p>{{ collectionShape.metafields.coll.shortDescription }}</p></div>
+<br>
+  
+      {% endfor %}
+ 
+
+
+
+  </div>
+</div>
+
+{% endif %}
+
+
+<section class="section ep-stats">
+  
+<table><tbody>
+
+{% if product.metafields.shopify.compatible-stove-top-type != blank %}<tr><th>Compatible Stove Tops
+</th><td>
+
+{% for item in product.metafields.shopify.compatible-stove-top-type.value %}
+  {{ item.label.value }} {% unless forloop.last %},{% endunless %}
+{% endfor %}
+
+
+</td> </tr>
+{% endif %}
+
+
+{% if product.metafields.knifeStats.shape != blank %} <tr> <th>Shape</th> <td> <a href="{{ routes.collections_url }}/{{ product.metafields.knifeStats.shape | handleize }}"> {{ product.metafields.knifeStats.shape | metafield_tag }} </td> </tr> {% endif %}
+
+{% if product.metafields.knifeStats.blade_length != blank %} <tr> <th>Blade Length</th> <td> {{ product.metafields.knifeStats.blade_length | metafield_tag }} </td> </tr> {% endif %}
+
+{% if product.metafields.stats.overall-length != blank %} <tr> <th>Overall Length</th> <td> {{ product.metafields.stats.overall-length | metafield_tag }} </td> </tr> {% endif %}
+
+
+{% if product.metafields.knifeStats.bladeHeight != blank %} <tr> <th>
+ {%- if product.metafields.knifeStats.shape != blank -%}Blade Height{%- else -%}Height{%- endif -%}
+    </th> <td> 
+  {{ product.metafields.knifeStats.bladeHeight | metafield_tag }} </td> </tr> 
+{% endif %}
+
+{% if product.metafields.knifeStats.blade_thickness != blank %} <tr> <th>
+{%- if product.metafields.knifeStats.shape != blank -%}Blade Thickness Above Heel{%- else -%}Thickness{%- endif -%}
+
+</th> <td> {{ product.metafields.knifeStats.blade_thickness | metafield_tag }} </td> </tr> {% endif %}
+
+{% if product.metafields.stats.diameter != blank %} <tr> <th>Diameter</th> <td> {{ product.metafields.stats.diameter | metafield_tag }} </td> </tr> {% endif %}
+
+{% if product.metafields.stats.dimensions != blank %} <tr> <th>Dimensions</th> <td> 
+
+{{product.metafields.stats.dimensions.value[0] }}(L) x
+
+{{product.metafields.stats.dimensions.value[1] }}(W) x
+
+{{product.metafields.stats.dimensions.value[2] }}(H) 
+
+
+ </td> </tr> {% endif %}
+
+ {% if product.metafields.stats.dimensions.value[3] != blank %} <tr> <th>Internal Dimensions</th> <td> 
+
+{{product.metafields.stats.dimensions.value[3] }}(L) x
+
+{{product.metafields.stats.dimensions.value[4] }}(W) x
+
+{{product.metafields.stats.dimensions.value[5] }}(H) 
+
+
+ </td> </tr> {% endif %}
+
+{% if product.metafields.stats.weight != blank %} <tr> <th>Weight</th> <td> {{ product.metafields.stats.weight | metafield_tag }} </td> </tr> {% endif %}
+
+{% if product.metafields.knifeStats.steel  != blank %} <tr> <th>Steel Type</th> <td>
+  <a href="{{ routes.collections_url }}/{{ product.metafields.knifeStats.steel | handleize }}">
+  {{ product.metafields.knifeStats.steel | metafield_tag }} 
+  {% if product.metafields.knifeStats.cladding  != blank %} {{product.metafields.knifeStats.cladding | metafield_tag}}{% endif %}
+  {{ rustProne }}
+  </a>
+</td> </tr> {% endif %}
+
+
+{% if product.metafields.knifeStats.rockwell_overwrite != blank %}
+ <tr> <th> {{ 'products.product.custom.rockwell' | t }}</th> <td> {{product.metafields.knifeStats.rockwell_overwrite}}</td> </tr>
+  
+  
+   {% elsif collectionHRC.metafields.steel.hrc != blank and product.metafields.knifeStats.rockwell_overwrite == blank %}
+ <tr> <th>{{ 'products.product.custom.rockwell' | t }}</th> <td> {{collectionHRC.metafields.steel.hrc}} </td> </tr>
+  
+   {% endif %}
+
+
+{% if product.metafields.knifeStats.blacksmith != blank %} <tr> <th>Blacksmith</th> <td> <a href="{{ routes.collections_url }}/{{ product.metafields.knifeStats.blacksmith | handleize }}"> {{ product.metafields.knifeStats.blacksmith | metafield_tag }} </a></td> </tr> {% endif %}
+
+  {% if product.metafields.knifeStats.sharpener != blank %} <tr> <th>Sharpener</th> <td> <a href="{{ routes.collections_url }}/{{ product.metafields.knifeStats.sharpener | handleize }}"> {{ product.metafields.knifeStats.sharpener | metafield_tag }} </a></td> </tr> {% endif %}
+
+
+{% if product.metafields.knifeStats.edge_bevel != blank %} <tr> <th>Edge/Bevel</th> <td> {{ product.metafields.knifeStats.edge_bevel | metafield_tag }} </td> </tr> {% endif %}
+
+
+{% if product.metafields.knifeStats.handle != blank or handleDetailsContent != blank %} <tr> <th>Handle</th> <td> {{ product.metafields.knifeStats.handle | metafield_tag }} {{handleDetailsContent}} </td> </tr> {% endif %}
+
+
+
+{% if product.metafields.stats.made_in != blank %} <tr> <th>Made in</th> <td> {{ product.metafields.stats.made_in | metafield_tag }} </td> </tr> {% endif %}
+
+  
+{% if product.metafields.knifeStats.knifeline-nue != blank %} <tr> <th>Knifeline</th> <td>  {{ product.metafields.knifeStats.knifeline-nue | metafield_tag }} </td> </tr> {% endif %}
+
+{% unless product.vendor == product.metafields.knifeStats.blacksmith %}
+
+ <tr> <th>Brand</th> <td>{% if collectionIs404 contains product.vendor %}<a href="{{ routes.collections_url }}/{{ product.vendor | handleize }}">{{ product.vendor }} </a>{% else %} {{ product.vendor }} {% endif %} </td> </tr>
+
+{% endunless %}
+
+
+</tbody> </table>
+  {% if product.vendor contains "Sakai" %}
+  <p><i>A note about measurements: Knife edge length is shorter than stated, as Sakai knives are measured from the front of the handle to the tip. Additionally, some knives feature a small 'machi' gap between the handle and blade.</i></p>
+  {% elsif product.metafields.knifeStats.shape != blank and product.metafields.knifeStats.blacksmith != blank %}
+  <p><i>{{ 'products.product.custom.measurement_disclaimer' | t }}</i></p>
+    {% else %}
+    
+  {% endif %} 
+
+{% if product.metafields.custom.hide_back_in_stock_form == true and product.available == false %}
+
+  <style>
+    .swym-wishlist-button-bar,
+   .purchase-details,
+  a.action_button.klaviyo-bis-trigger {
+    display: none !important;
+}
+  </style>
+
+  {% endif %} 
+  
+</section>

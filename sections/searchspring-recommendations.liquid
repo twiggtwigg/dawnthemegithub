@@ -1,0 +1,30 @@
+
+
+{% if settings.ss_enable and section.settings.profileId != blank %}
+  <div data-section-type="searchspring-recommendations" data-section-id="{{ section.id }}" class="section page-width-desktop isolate">
+    <script type="searchspring/personalized-recommendations" profile="{{ section.settings.profileId }}">
+      seed = "{{ product.variants[0].sku }}";
+    </script>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "SS Recommendations",
+  "tag": "section",
+  "class": "searchspring-recommendations-section",
+  "presets": [
+    {
+      "name": "Searchspring Recommendations"
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "profileId",
+      "label": "Profile ID",
+      "info": "The profileId can be found in the Searchspring Management Console"
+    }
+  ]
+}
+{% endschema %}

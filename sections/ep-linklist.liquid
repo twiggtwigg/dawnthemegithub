@@ -1,0 +1,113 @@
+<script
+  type="application/json"
+  data-section-type="image-text"
+  data-section-id="{{ section.id }}"
+>
+</script>
+
+{% comment %} Assign object as block or section {% endcomment %}
+{% if type == 'block' %}
+  {%- assign object = block -%}
+{% else %}
+  {%- assign object = section -%}
+{% endif %}
+
+{%- assign id = object.id -%}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign blocks = object.blocks -%}
+{% comment %} End content settings {% endcomment %}
+
+{% comment %} Advanced {% endcomment %}
+{%- assign css_class = object.settings.css_class -%}
+{%- assign custom_css = object.settings.custom_css -%}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  {%
+    render 'css-loop',
+    css: custom_css,
+    id: id
+  %}
+{% endstyle %}
+
+<div
+  class="collection page-width"
+>
+  
+  
+  <h2>{{section.settings.menu-heading}}</h2>
+ 
+      
+	<ul class='ep-plain-linklist description rte'>
+	{% for link in section.settings.menu.links %}
+      <li><a href="{{ link.url }}">{{ link.title }}
+      
+		{%if link.object.metafields.steel.hrc != blank %}
+		<br>
+     	<b>Rockwell Hardness:</b> {{ link.object.metafields.steel.hrc }}  
+       {% endif %}
+        </a>
+     </li> 
+	{% endfor %}	
+  </ul>
+
+
+  {% if blocks.size > 0 %}
+    {% for block in blocks %}
+
+    {% endfor %}
+  {% endif %}
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Plain Linklist",
+  "class": "shopify-section--image-with-text",
+  "max_blocks": 16,
+  "settings": [
+	 {
+      "type": "text",
+      "id": "menu-heading",
+      "label": "Menu Heading"
+    },
+    {
+  "type": "link_list",
+  "id": "menu",
+  "label": "Menu"
+	},  
+    {
+      "type": "text",
+      "id": "css_class",
+      "label": "CSS Class"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_css",
+      "label": "Custom CSS"
+    }
+  ],
+  "blocks": [
+
+  ],
+  "presets": [
+{
+    "name": "Plain Linklist",
+    "category": "Image",
+    "settings": {
+     
+    }
+
+  }
+
+],
+  "templates": [
+    "page",
+	"collection"
+	
+  ]
+}
+
+{% endschema %}

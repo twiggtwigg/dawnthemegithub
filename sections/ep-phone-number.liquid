@@ -1,0 +1,115 @@
+ {% unless template.name == 'index' %}
+
+  <div class="">
+    {% for metaobject in shop.metaobjects.canada_regions.values %}
+        <div class="region-{{ metaobject.region_name.value | downcase}}" data-phone="{{ metaobject.phone.value }}">
+    
+           
+        </div>
+    {% endfor %}
+  </div>
+
+  {% endunless %}
+
+   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Fetch API example
+        const regions = ['Calgary', 'Vancouver', 'Edmonton', 'Ottawa', 'Toronto','Mississauga','Port Coquitlam']
+        const geoLocation = fetch('https://ipinfo.io/json?token=f6b7947f200683')
+            .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+            })
+            .then(data => {
+                console.log('geoLocation:', data);
+                const userRegion = data.city
+                let phone = "1-888-669-6168"
+                if(regions.includes(userRegion)) {
+                    switch (userRegion) {
+                        case 'Calgary':
+                            document.querySelector('.region-calgary').classList.add('active');
+                            phone = document.querySelector('.region-calgary').getAttribute('data-phone');
+                            document.querySelector('.announcement-bar__message--second-row > span').innerHTML = `Call us: ${phone}`;
+                            document.querySelector('.announcement-bar__link').setAttribute('href', `tel: ${phone}`);
+                        
+                            break;
+                    
+                        case 'Vancouver':
+                            document.querySelector('.region-vancouver').classList.add('active');
+                            phone = document.querySelector('.region-vancouver').getAttribute('data-phone');
+                            document.querySelector('.announcement-bar__message--second-row > span').innerHTML = `Call us: ${phone}`;
+                            document.querySelector('.announcement-bar__link').setAttribute('href', `tel: ${phone}`);
+                            break;
+
+                        case 'Port Coquitlam':
+                            document.querySelector('.region-vancouver').classList.add('active');
+                            phone = document.querySelector('.region-vancouver').getAttribute('data-phone');
+                            document.querySelector('.announcement-bar__message--second-row > span').innerHTML = `Call us: ${phone}`;
+                            document.querySelector('.announcement-bar__link').setAttribute('href', `tel: ${phone}`);
+                            break;    
+
+                        case 'Edmonton':
+                            document.querySelector('.region-edmonton').classList.add('active');
+                            phone = document.querySelector('.region-edmonton').getAttribute('data-phone');
+                            document.querySelector('.announcement-bar__message--second-row > span').innerHTML = `Call us: ${phone}`;
+                            document.querySelector('.announcement-bar__link').setAttribute('href', `tel: ${phone}`);
+                            break;
+
+                        case 'Ottawa':
+                            document.querySelector('.region-ottawa').classList.add('active');
+                            phone = document.querySelector('.region-ottawa').getAttribute('data-phone');
+                            document.querySelector('.announcement-bar__message--second-row > span').innerHTML = `Call us: ${phone}`;
+                            document.querySelector('.announcement-bar__link').setAttribute('href', `tel: ${phone}`);
+                            break;
+
+                        case 'Toronto':
+                            document.querySelector('.region-toronto').classList.add('active');
+                            phone = document.querySelector('.region-toronto').getAttribute('data-phone');
+                            document.querySelector('.announcement-bar__message--second-row > span').innerHTML = `Call us: ${phone}`;
+                            document.querySelector('.announcement-bar__link').setAttribute('href', `tel: ${phone}`);
+                            break;
+
+                        case 'Mississauga':
+                            document.querySelector('.region-toronto').classList.add('active');
+                            phone = document.querySelector('.region-toronto').getAttribute('data-phone');
+                            document.querySelector('.announcement-bar__message--second-row > span').innerHTML = `Call us: ${phone}`;
+                            document.querySelector('.announcement-bar__link').setAttribute('href', `tel: ${phone}`);
+                            break;    
+
+                        default:
+                            break;
+                    } 
+                } else {
+                    document.querySelector('.announcement-bar__message--second-row > span').innerHTML = `Call us: ${phone}`;
+                    document.querySelector('.announcement-bar__link').setAttribute('href', `tel: ${phone}`);
+                }
+            })
+            .catch(error => {
+            console.error('Error during fetch:', error);
+            });
+    });
+  </script>
+
+
+
+
+
+{% schema %}
+{
+  "name": "Phone Number Switch",
+  "class": "ep-phone-number-section",
+  "enabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Phone Number Switch"
+    }
+  ]
+}
+{% endschema %}

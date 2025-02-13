@@ -1,0 +1,67 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": ""
+      }
+    },
+    "16475535161548384e": {
+      "type": "ep-linklist",
+      "settings": {
+        "menu-heading": "Stainless Steel in Alphabetical Order",
+        "menu": "stainless-steel-types",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "164755563766c6310e": {
+      "type": "ep-linklist",
+      "settings": {
+        "menu-heading": "Carbon Steel in Alphabetical Order",
+        "menu": "steel-types-carbon-steel",
+        "css_class": "",
+        "custom_css": ""
+      }
+    },
+    "ep_multicolumn_tp4VdW": {
+      "type": "ep-multicolumn",
+      "settings": {
+        "title": "Learn more about knife steels",
+        "content_source": "related-articles",
+        "metaobject-name": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "block_limit": 3,
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16475535161548384e",
+    "164755563766c6310e",
+    "ep_multicolumn_tp4VdW"
+  ]
+}

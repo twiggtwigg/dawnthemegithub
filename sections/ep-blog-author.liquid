@@ -1,0 +1,88 @@
+{%- assign id = section.id -%}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign blocks = section.blocks -%}
+{% comment %} End content settings {% endcomment %}
+
+{% comment %} Advanced {% endcomment %}
+{%- assign css_class = section.settings.css_class -%}
+{%- assign custom_css = section.settings.custom_css -%}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  {%
+    render 'css-loop',
+    css: custom_css,
+    id: id
+  %}
+{% endstyle %}
+
+{% assign recommended_collections = article.metafields.custom.promoted_collections.value %}
+
+<div class="article-template__content page-width page-width--narrow rte">
+ 
+
+
+    <ul class="recommended_products-ep">
+      {% for collection in recommended_collections %}
+        <li class="thumbnail article-product-link">
+          <a href="{{ collection.url }}">
+            {{ collection.featured_image | image_url: width: 400 | image_tag: loading: 'lazy' }}
+            <span class="title">{{ collection.title }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+    <div class="article-template__back element-margin-top center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
+      <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+      {{ 'blogs.article.back_to_blog' | t: title: blog.title | escape }}
+    </a>
+  </div>
+
+
+<div class="article-template__content page-width page-width--narrow rte">
+  <div class="">
+    <div class="grid-one-third-two-thirds">
+      <div class="blog_author">
+        <img
+          class="blog_author_photo"
+          src="{{ article.metafields.custom.author.value.photo | img_url: '200x200' }}"
+          alt="   {{ article.metafields.custom.author.value.name }}"
+        >
+ </div>
+        <div class="author_bio">
+          <h3>
+            {{ article.metafields.custom.author.value.name }}
+          </h3>
+          <p>{{ article.metafields.custom.author.value.bio }}</p>
+        </div>
+     
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog Author",
+  "settings": [
+
+  ],
+
+  "presets": [
+  {
+    "name": "Blog Author",
+    "category": "Product"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

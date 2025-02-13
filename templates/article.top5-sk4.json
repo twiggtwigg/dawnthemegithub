@@ -1,0 +1,156 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image_7BWJnE": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "small"
+          }
+        },
+        "title_JkLek9": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share_EbMwmb": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content_WdWzdR": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image_7BWJnE",
+        "title_JkLek9",
+        "share_EbMwmb",
+        "content_WdWzdR"
+      ],
+      "settings": {
+      }
+    },
+    "d722b1aa-fb00-48e0-9eb6-3aaced4bb5e3": {
+      "type": "ep-blog-feature-products",
+      "blocks": {
+        "template--16102015336622__d722b1aa-fb00-48e0-9eb6-3aaced4bb5e3-16853892257a53499d-0": {
+          "type": "product",
+          "settings": {
+            "featured_product": "sakai-takayuki-sk4-sujihiki-210mm",
+            "text": "<p>It doesn’t happen often but sometimes you need a smaller slicer. Maybe you don’t have a tonne of room on the line, or you don’t buy huge cuts of meat but love a roast duck or showing everyone at the potluck up with carpaccio.<\/p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "57f2fed9-863d-48ab-9d2f-c69d72212b19": {
+          "type": "product",
+          "settings": {
+            "featured_product": "sakai-takayuki-sk4-komakiri-gyuto-240mm",
+            "text": "<p>A 210mm gyuto is the right size for most people. I'd take one over a santoku any day of the week but what if you’re built like Andre the Giant? You’re gonna need 270mm or even 330mm. Hell, that 240mm <em>komakiri<\/em> gyuto would be awesome for someone with a bigger hand. It’s a bit taller at the heel and gives you a deeper knife to mow down a mountain of green onions for your famous ramen nights.<\/p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "template--16102015336622__d722b1aa-fb00-48e0-9eb6-3aaced4bb5e3-16853892257a53499d-1": {
+          "type": "product",
+          "settings": {
+            "featured_product": "sakai-takayuki-sk4-honesuki-maru-150mm",
+            "text": "<p>There is something rebellious and badass about a boning knife with no finger guard or bolster. I love a knife this shape for any large scale butchery, think pork shoulders or lamb legs, or even breaking down a chicken. If you regularly deal with larger birds like turkeys and geese, treat yourself to the garasuki as well.<\/p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "3b393bfd-ba05-42a2-9c78-f44569f9590b": {
+          "type": "product",
+          "settings": {
+            "featured_product": "sakai-takayuki-sk4-petty-120mm",
+            "text": "<p>This petty is the quintessential small knife. It fits perfectly in my hand, yours too I bet. It’s the right size for peeling an orange or slicing a cherry tomato in half. It’s long enough to take the silver skin off of a roast. It’s only $86CAD; you can’t buy anything half as useful for less.<\/p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16102015336622__d722b1aa-fb00-48e0-9eb6-3aaced4bb5e3-16853892257a53499d-0",
+        "57f2fed9-863d-48ab-9d2f-c69d72212b19",
+        "template--16102015336622__d722b1aa-fb00-48e0-9eb6-3aaced4bb5e3-16853892257a53499d-1",
+        "3b393bfd-ba05-42a2-9c78-f44569f9590b"
+      ],
+      "settings": {
+        "layout": "small",
+        "hide-price": false
+      }
+    },
+    "rich_text_DiJBBC": {
+      "type": "rich-text",
+      "blocks": {
+        "text_QBqPRU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you’ve always been curious about using carbon steel, these are a great excuse to take the plunge. It’s going to take paying a little more attention when drying them off and keeping them clean but you already do that with your stainless steel knives, right? You’ll notice that they are a little more rugged than most carbon steel knives—still avoid bones and such—and the edge retention to dollars spent ratio is off the charts. If there was one in my kitchen, it would live on my cutting board full-time.<\/p><p>Just remember, your favourite knife probably isn’t your fanciest one. It’s the one you reach for the most. <a href=\"https:\/\/knifewear.com\/collections\/sakai-takayuki-sk4\" title=\"https:\/\/knifewear.com\/collections\/sakai-takayuki-sk4\">Find the entire Sakai Takayuki SK4 series here.<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_QBqPRU"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "aa4c405e-a2c7-4aa0-bc2e-75e2d82cadcd": {
+      "type": "ep-blog-author",
+      "settings": {
+      }
+    },
+    "1655832228289470c4": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Recent blog posts",
+        "heading_size": "h1",
+        "blog": "articles",
+        "post_limit": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-2",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d722b1aa-fb00-48e0-9eb6-3aaced4bb5e3",
+    "rich_text_DiJBBC",
+    "aa4c405e-a2c7-4aa0-bc2e-75e2d82cadcd",
+    "1655832228289470c4"
+  ]
+}

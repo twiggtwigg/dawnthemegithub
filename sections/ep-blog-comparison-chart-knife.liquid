@@ -1,0 +1,165 @@
+{%- assign id = section.id -%}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign blocks = section.blocks -%}
+{% comment %} End content settings {% endcomment %}
+
+{% comment %} Advanced {% endcomment %}
+{%- assign css_class = section.settings.css_class -%}
+{%- assign custom_css = section.settings.custom_css -%}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  {%
+    render 'css-loop',
+    css: custom_css,
+    id: id
+  %}
+{% endstyle %}
+
+{% if blocks.size > 0 %}
+  <div class="article-template__content page-width page-width--narrow rte">
+    {% for block in blocks %}
+      <div class="blog-comparsion-grid-knife">
+        {% comment %} Content settings {% endcomment %}
+        {%- assign product = all_products[block.settings.featured_product] -%}
+        {% comment %} End content settings {% endcomment %}
+
+        {%- assign collection_handles = product.collections | map: 'handle' -%}
+
+        {% if product.empty? %}
+          {%- assign section_onboarding = true -%}
+        {% else %}
+          {%- assign section_onboarding = false -%}
+        {% endif %}
+        <div class="product-{{ product.id }}">
+          <div
+            class="
+              product_section
+              js-product_section
+              product--description-{{ product_description_position }}
+            "
+            data-block-id="{{ block.id }}"
+            {{ block.shopify_attributes }}
+          >
+            <div class="">
+               <a href="{{ product.url }}">{{ product.featured_image | image_url: width: 800 | image_tag }}</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="product_name">
+            <a href="{{ product.url }}">
+              {{- product.title }}
+              <br>
+
+              {%- render 'price',
+                    product: product,
+                    use_variant: true,
+                    show_badges: true,
+                    price_class: 'price--large'
+                  -%}
+            
+            </a>
+          </h3>
+          <div class="yotpo bottomLine" style="display:inline-block" data-product-id="{{ product.id }}"></div>
+
+          <div class="feature-details">
+            {% if block.settings.text != blank %}
+              <div class="description">
+                {{ block.settings.text }}
+              </div>
+            {% endif %}
+          </div>
+          <a class="blog__read-more-button global-button global-button--text" href="{{ product.url }}">View Product</a>
+        </div>
+      </div>
+      <div class="feature_divider"></div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Comparison Chart - Knife",
+  "settings": [
+
+  ],
+"blocks": [
+  {
+    "type": "product",
+    "name": "Product",
+    "settings": [
+      {
+        "type": "product",
+        "id": "featured_product",
+        "label": "Product"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Promotion description details.</p>"
+      },
+
+      {
+        "type": "text",
+        "id": "text-size",
+        "label": "Size/Demensions"
+      },
+{
+        "type": "image_picker",
+        "id": "yakitori",
+        "label": "Column Image 2",
+        "info": "1280 x 1280px .jpg recommended"
+      },
+{
+        "type": "text",
+        "id": "text_yaki",
+        "label": "Column Text 2"
+      },
+{
+        "type": "image_picker",
+        "id": "burgers",
+        "label": "Column Image 3",
+        "info": "1280 x 1280px .jpg recommended"
+      },
+{
+        "type": "text",
+        "id": "text_burger",
+        "label": "Column Text 3"
+      },
+{
+        "type": "image_picker",
+        "id": "feeds",
+        "label": "Column Image 4",
+        "info": "1280 x 1280px .jpg recommended"
+      },{
+        "type": "text",
+        "id": "text-people",
+        "label": "Column Text 4"
+      }
+    ]
+  }
+],  "presets": [
+  {
+    "name": "Comparison Chart - Knife",
+    "category": "Product",
+    "blocks": [
+      {
+        "type": "product"
+      },
+      {
+        "type": "product"
+      }
+    ]
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

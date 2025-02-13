@@ -1,0 +1,159 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image_tC6fGw": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title_GyK38N": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content_d8HQwz": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image_tC6fGw",
+        "title_GyK38N",
+        "content_d8HQwz"
+      ],
+      "settings": {
+      }
+    },
+    "0d94a6e2-dc2c-40fe-9927-2d4b1cdfd565": {
+      "type": "ep-blog-feature-products",
+      "blocks": {
+        "template--16114526879918__0d94a6e2-dc2c-40fe-9927-2d4b1cdfd565-16868481892e263d15-0": {
+          "type": "product",
+          "settings": {
+            "featured_product": "knifewear-ogatan-charcoal",
+            "text": "<ul><li>Carbon Content: 90%</li><li>Burn Time: 2-3 hours</li><li>No flame and very little smoke.</li><li>Compressed sawdust from fruitwood (trim and dead wood from orchards)</li></ul>",
+            "review": true,
+            "fun-fact-heading": "Tips for Starting:",
+            "fun-fact": "<ul><li>Use a<a href=\"/products/charcoal-chimney-bbq-starter\" title=\"Charcoal Chimney BBQ Starter\"> chimney starter</a> with paper in the bottom and be prepared to do it a second time. </li><li>Make sure that all of the briquettes are stacked vertically in the chimney so the fire below can get into the centre of the coals.</li><li>Tuck some dry kindling in and around the coals if you have it, it’ll help get a fire going.</li></ul>"
+          }
+        },
+        "template--16114526879918__0d94a6e2-dc2c-40fe-9927-2d4b1cdfd565-16868481892e263d15-1": {
+          "type": "product",
+          "settings": {
+            "featured_product": "knifewear-shirozumi-eucalyptus-charcoal",
+            "text": "<ul><li>Carbon Content: 90%</li><li>Burn Time: 3-4 hours</li><li>No flame and very little smoke.</li><li>Eucalyptus - super fast growing and sustainable wood source.</li></ul>",
+            "review": true,
+            "fun-fact-heading": "Tips for Starting:",
+            "fun-fact": "<ul><li>Place your binchotan on a bed of already lit softer charcoal like the ogatan or even lump charcoal if you have it.</li><li>Make sure that your coal is neatly placed in the <a href=\"/products/charcoal-chimney-bbq-starter\" title=\"Charcoal Chimney BBQ Starter\">chimney starter</a>, all running in the same direction, and place the whole thing on a propane burner for 15 to 20 minutes.</li><li>Use a hair dryer, fan, or shop-vac to blow air on the coals like a blacksmith’s bellows.<br/></li></ul>"
+          }
+        },
+        "0086c708-3b22-4ff6-a902-95abe5d8481d": {
+          "type": "product",
+          "settings": {
+            "featured_product": "binchotan-charcoal-case",
+            "text": "<ul><li>Carbon Content: 95-97%</li><li>Burn Time: 5 to 8 hours</li><li>No flame and very little smoke.</li><li>Ubame Oak - very hard and dense oak.</li></ul>",
+            "review": false,
+            "fun-fact-heading": "Tips for starting:",
+            "fun-fact": "<ul><li>Place your binchotan on a bed of already lit softer charcoal like the ogatan or even lump charcoal if you have it.</li><li>Make sure that your coal is neatly placed in the chimney starter, all running in the same direction, and place the whole thing on a propane burner for 15 to 20 minutes.</li><li>Use a hair dryer, fan, or shop-vac to blow air on the coals like a blacksmith’s bellows.<br/></li></ul>"
+          }
+        },
+        "product_mfQLnM": {
+          "type": "product",
+          "settings": {
+            "featured_product": "tosa-binchotan-charcoal",
+            "text": "<ul><li>Carbon Content: 95-97%</li><li>Burn Time: 5 to 8 hours</li><li>No flame and very little smoke.</li><li>Ubame Oak - very hard and dense oak.</li></ul>",
+            "review": false,
+            "fun-fact-heading": "Tips for starting:",
+            "fun-fact": "<ul><li>Place your binchotan on a bed of already lit softer charcoal like the ogatan or even lump charcoal if you have it.</li><li>Make sure that your coal is neatly placed in the chimney starter, all running in the same direction, and place the whole thing on a propane burner for 15 to 20 minutes.</li><li>Use a hair dryer, fan, or shop-vac to blow air on the coals like a blacksmith’s bellows.<br/></li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16114526879918__0d94a6e2-dc2c-40fe-9927-2d4b1cdfd565-16868481892e263d15-0",
+        "template--16114526879918__0d94a6e2-dc2c-40fe-9927-2d4b1cdfd565-16868481892e263d15-1",
+        "0086c708-3b22-4ff6-a902-95abe5d8481d",
+        "product_mfQLnM"
+      ],
+      "settings": {
+        "layout": "small",
+        "hide-price": true
+      }
+    },
+    "rich_text_NUcgtj": {
+      "type": "rich-text",
+      "blocks": {
+        "text_WGTiNj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Choosing which charcoal to use is likely going to be your biggest deciding factor. I like to use the ogatan for day to day grilling—easy to light, not too expensive—and the binchotan for meals where I really want to show off something unique and let subtle differences in flavour poke through. The <strong>shirozumi</strong> is going to set right in the middle and is likely going to become many people’s favourite. Make sure you pick up a <a href=\"/products/charcoal-chimney-bbq-starter\" title=\"Charcoal Chimney BBQ Starter\">chimney starter</a> regardless of the charcoal you use, and grab a pair of <a href=\"https://knifewear.com/products/king-tong-36cm-tweezers\">King Tong</a> so you can easily move the charcoal around your grill. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_WGTiNj"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "47b31a9c-4f8b-4ae7-9a78-1308c2cfe08a": {
+      "type": "ep-blog-author",
+      "settings": {
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_blog_tdLJhA": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Recent Blog posts",
+        "heading_size": "h1",
+        "blog": "articles",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0d94a6e2-dc2c-40fe-9927-2d4b1cdfd565",
+    "rich_text_NUcgtj",
+    "47b31a9c-4f8b-4ae7-9a78-1308c2cfe08a",
+    "newsletter",
+    "featured_blog_tdLJhA"
+  ]
+}

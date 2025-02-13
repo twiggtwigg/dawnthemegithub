@@ -1,0 +1,268 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image_TraL9g": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "medium"
+          }
+        },
+        "title_mrBCyz": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content_KTtrWW": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image_TraL9g",
+        "title_mrBCyz",
+        "content_KTtrWW"
+      ],
+      "settings": {
+      }
+    },
+    "ceb2948d-225a-441a-af4f-a1dff6cbc5b6": {
+      "type": "ep-blog-feature-products",
+      "blocks": {
+        "04b6d85c-8825-43ca-8200-e33adde35378": {
+          "type": "product",
+          "settings": {
+            "featured_product": "cck-cleaver-no-3-small-slicer",
+            "text": "<p><em>song dou</em>, <strong>桑刀 </strong></p><ul><li>CCK 1303 (a.k.a., “small slicer”)</li><li>Carbon steel with black “kurouchi” finish</li><li>Lacquered finish protects against rust but wears away over time</li><li>Super thin, featherweight, no bones</li><li>“Mulberry” means as thin as a mulberry leaf, or able to cut things as thin as a mulberry leaf, or suitable for cutting mulberry leaves into threads fine enough to feed to silkworms.</li></ul>",
+            "review": true,
+            "fun-fact-heading": "Performance Rating",
+            "fun-fact": "<p><strong>Slicing</strong> ⭐⭐⭐⭐⭐<br/><strong>Chopping</strong> ⭐<br/><strong>Edge retention</strong> ⭐<br/><strong>Corrosion resistance</strong> ⭐⭐⭐</p>"
+          }
+        },
+        "4a729a20-c7b6-4281-b678-54bb041dca3f": {
+          "type": "product",
+          "settings": {
+            "featured_product": "cck-cleaver-no-3-small-slicer-kf1912",
+            "text": "<p><em>siu peen dou</em>,<strong>小片刀</strong></p><ul><li>CCK 1912 (a.k.a., “stainless small slicer”)</li><li>Stainless steel</li><li>Thin, lightweight, no bones</li></ul>",
+            "review": true,
+            "fun-fact-heading": "Performance Rating",
+            "fun-fact": "<p><strong>Slicing</strong> ⭐⭐⭐⭐<br/><strong>Chopping</strong> ⭐⭐<br/><strong>Edge retention</strong> ⭐<br/><strong>Corrosion resistance</strong> ⭐⭐⭐⭐⭐</p>"
+          }
+        },
+        "64b21804-cd7a-4fd6-a72c-cc58aa9a57cc": {
+          "type": "product",
+          "settings": {
+            "featured_product": "cck-cleaver-stainless-steel-chopper-195mm-kf1904",
+            "text": "<p><em>choi dou</em>,<strong>菜刀 </strong></p><ul><li>CCK 1904 (a.k.a., “chopper”)</li><li>Stainless steel</li><li>Dual purpose, welterweight, chop fish or chicken bones near heel</li><li>“Vegetable” here actually refers to food in general</li></ul>",
+            "review": false,
+            "fun-fact-heading": "Performance Rating",
+            "fun-fact": "<p><strong>Slicing</strong> ⭐⭐⭐<br/><strong>Chopping</strong> ⭐⭐⭐<br/><strong>Edge retention</strong> ⭐<br/><strong>Corrosion resistance</strong> ⭐⭐⭐⭐⭐</p>"
+          }
+        },
+        "11374c31-dc35-4d3c-88c3-2c2e6694834f": {
+          "type": "product",
+          "settings": {
+            "featured_product": "cck-cleaver-no-3-civil-and-military-chopper-knife-215mm-kf1203",
+            "text": "<p><em>manh mouh dou</em>,<strong>文武刀</strong></p><ul><li>CCK 1203 (a.k.a., “kitchen chopper”)</li><li>Carbon steel</li><li>Lacquered finish protects against rust but wears away over time</li><li>Workhorse, jack-of-all-trades, middleweight, chop bigger poultry bones (turkey and goose) near heel</li><li>“Civil/Military” means able to do fine and rough jobs</li></ul>",
+            "review": true,
+            "fun-fact-heading": "Performance Rating",
+            "fun-fact": "<p><strong>Slicing</strong> ⭐⭐<br/><strong>Chopping</strong> ⭐⭐⭐⭐<br/><strong>Edge retention</strong> ⭐<br/><strong>Corrosion resistance</strong> ⭐⭐⭐</p>"
+          }
+        },
+        "99790625-c9ee-4a1a-b271-8bdeff120680": {
+          "type": "product",
+          "settings": {
+            "featured_product": "cck-cleaver-kau-kong-chopper-kf1411",
+            "text": "<p><em>Kau kong dou</em>,<strong>九江刀</strong></p><ul><li>CCK 1411 (a.k.a., “kau kong chopper”)</li><li>Carbon steel with black “kurouchi” </li><li>Lacquered finish protects against rust but wears away over time</li><li>Heavy duty but versatile, light heavyweight, chop bigger bones (pork ribs) at heel</li><li>Nine Rivers refers to the shape of the blade, which looks like a city in China of the same name</li></ul>",
+            "review": true,
+            "fun-fact-heading": "Performance Rating",
+            "fun-fact": "<p><strong>Slicing</strong> ⭐<br/><strong>Chopping</strong> ⭐⭐⭐⭐⭐<br/><strong>Edge retention</strong> ⭐<br/><strong>Corrosion resistance</strong> ⭐⭐⭐</p>"
+          }
+        }
+      },
+      "block_order": [
+        "04b6d85c-8825-43ca-8200-e33adde35378",
+        "4a729a20-c7b6-4281-b678-54bb041dca3f",
+        "64b21804-cd7a-4fd6-a72c-cc58aa9a57cc",
+        "11374c31-dc35-4d3c-88c3-2c2e6694834f",
+        "99790625-c9ee-4a1a-b271-8bdeff120680"
+      ],
+      "settings": {
+        "layout": "small",
+        "hide-price": true
+      }
+    },
+    "rich_text_YJHaHn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_E6nLYk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Japanese Chuka Bocho Knife Rankings and Buying Guide",
+            "heading_size": "h1"
+          }
+        },
+        "text_Dkbwyy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As with most Japanese blades, chuka bocho are made from very hard steels that allow them to be sharper and to stay sharp longer than many other knives. The trade-off is that they are typically more brittle. Some chuka bocho can be used for cutting small bones, but these are either made from a slightly less hard steel than other Japanese knives or are somewhat thicker than an equivalent Chinese cleaver—sometimes both!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_E6nLYk",
+        "text_Dkbwyy"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "0d94a6e2-dc2c-40fe-9927-2d4b1cdfd565": {
+      "type": "ep-blog-feature-products",
+      "blocks": {
+        "template--16114526879918__0d94a6e2-dc2c-40fe-9927-2d4b1cdfd565-16868481892e263d15-0": {
+          "type": "product",
+          "settings": {
+            "featured_product": "moritaka-ishime-mega-nakiri-165mm",
+            "text": "<ul><li>Carbon steel with textured black kurouchi finish</li><li>Will stain and can rust, but very easy to hone and sharpen</li><li>Very hard steel and an incredibly flat edge profile</li><li>No bones or other hard materials</li></ul>",
+            "review": true,
+            "fun-fact-heading": "Performance Rating",
+            "fun-fact": "<p><strong>Slicing</strong> ⭐⭐⭐⭐⭐<br/><strong>Chopping</strong> ⭐<br/><strong>Edge retention</strong> ⭐⭐⭐⭐<br/><strong>Corrosion resistance</strong> ⭐</p>"
+          }
+        },
+        "template--16114526879918__0d94a6e2-dc2c-40fe-9927-2d4b1cdfd565-16868481892e263d15-1": {
+          "type": "product",
+          "settings": {
+            "featured_product": "moritaka-as-kurouchi-chinese-cleaver-180mm",
+            "text": "<ul><li>Carbon steel with black kurouchi finish</li><li>Will stain and can rust, but easy to hone and sharpen</li><li>Super hard steel and an incredibly flat edge profile</li><li>No bones or other hard materials</li></ul>",
+            "review": true,
+            "fun-fact-heading": "Performance Rating",
+            "fun-fact": "<p><strong>Slicing</strong> ⭐⭐⭐⭐<br/><strong>Chopping</strong> ⭐<br/><strong>Edge retention</strong> ⭐⭐⭐⭐⭐<br/><strong>Corrosion resistance</strong> ⭐⭐</p>"
+          }
+        },
+        "0086c708-3b22-4ff6-a902-95abe5d8481d": {
+          "type": "product",
+          "settings": {
+            "featured_product": "mcusta-zanmai-becho-vg10-damascus-chinese-cleaver-180mm",
+            "text": "<ul><li>Stainless steel</li><li>Thin and hard but won’t stain or rust easily</li><li>No bones or other hard materials</li></ul>",
+            "review": false,
+            "fun-fact-heading": "Performance Rating",
+            "fun-fact": "<p><strong>Slicing</strong> ⭐⭐⭐⭐⭐<br/><strong>Chopping</strong> ⭐<br/><strong>Edge retention</strong> ⭐⭐⭐<br/><strong>Corrosion resistance</strong> ⭐⭐⭐⭐⭐</p>"
+          }
+        },
+        "e0cfa250-5dfd-4fb6-95dd-4f2dd9c5f284": {
+          "type": "product",
+          "settings": {
+            "featured_product": "sugimoto-no-2-chinese-cleaver-220mm",
+            "text": "<ul><li>Carbon steel</li><li>Will stain and can rust, but super easy to hone and sharpen</li><li>Very hard steel but with a thicker spine to allow for cutting fish bones or deboning a chicken while still slicing nicely</li></ul>",
+            "review": true,
+            "fun-fact-heading": "Performance Rating",
+            "fun-fact": "<p><strong>Slicing</strong> ⭐⭐⭐⭐<br/><strong>Chopping</strong> ⭐⭐<br/><strong>Edge retention</strong> ⭐⭐⭐⭐<br/><strong>Corrosion resistance</strong> ⭐</p>"
+          }
+        },
+        "51e0e7f4-31e8-4649-bffc-fa6f523b5c9b": {
+          "type": "product",
+          "settings": {
+            "featured_product": "sakai-takayuki-inox-chinese-cleaver-195mm",
+            "text": "<ul><li>Stainless steel</li><li>Relatively thin but tough enough to cut small fish bones or debone poultry</li></ul>",
+            "review": true,
+            "fun-fact-heading": "Performance Rating",
+            "fun-fact": "<p><strong>Slicing</strong> ⭐⭐⭐⭐<br/><strong>Chopping</strong> ⭐⭐<br/><strong>Edge retention</strong> ⭐⭐<br/><strong>Corrosion resistance</strong> ⭐⭐⭐⭐⭐</p>"
+          }
+        },
+        "0c8b8c65-2c63-4d19-ab74-7899b6befa0f": {
+          "type": "product",
+          "settings": {
+            "featured_product": "tojiro-wanhutei-chinese-cleaver-175mm",
+            "text": "<ul><li>Stainless steel </li><li>Slightly thicker and tougher than other some chuka bocho, so it can cut fish bones, smaller chicken bones (ribs, wishbone), or debone poultry</li></ul>",
+            "review": true,
+            "fun-fact-heading": "Performance Rating",
+            "fun-fact": "<p><strong>Slicing</strong> ⭐⭐<br/><strong>Chopping</strong> ⭐⭐⭐<br/><strong>Edge retention</strong> ⭐⭐<br/><strong>Corrosion resistance</strong> ⭐⭐⭐⭐⭐</p>"
+          }
+        },
+        "8d69dab7-b841-47a1-8179-fe9cad1ac2e8": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "featured_product": "tsunehisa-sk4-chuka-bocho-chinese-cleaver-220mm",
+            "text": "<ul><li>Carbon steel</li><li>Dual purpose, welterweight, chop fish and chicken bones near heel</li></ul>",
+            "review": true,
+            "fun-fact-heading": "Performance Rating",
+            "fun-fact": "<p><strong>Slicing</strong> ⭐⭐⭐<br/><strong>Chopping</strong> ⭐⭐⭐<br/><strong>Edge retention</strong> ⭐⭐<br/><strong>Corrosion resistance</strong> ⭐⭐</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16114526879918__0d94a6e2-dc2c-40fe-9927-2d4b1cdfd565-16868481892e263d15-0",
+        "template--16114526879918__0d94a6e2-dc2c-40fe-9927-2d4b1cdfd565-16868481892e263d15-1",
+        "0086c708-3b22-4ff6-a902-95abe5d8481d",
+        "e0cfa250-5dfd-4fb6-95dd-4f2dd9c5f284",
+        "51e0e7f4-31e8-4649-bffc-fa6f523b5c9b",
+        "0c8b8c65-2c63-4d19-ab74-7899b6befa0f",
+        "8d69dab7-b841-47a1-8179-fe9cad1ac2e8"
+      ],
+      "settings": {
+        "layout": "small",
+        "hide-price": true
+      }
+    },
+    "47b31a9c-4f8b-4ae7-9a78-1308c2cfe08a": {
+      "type": "ep-blog-author",
+      "settings": {
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_blog_GFY84x": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Recent Blog posts",
+        "heading_size": "h1",
+        "blog": "articles",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ceb2948d-225a-441a-af4f-a1dff6cbc5b6",
+    "rich_text_YJHaHn",
+    "0d94a6e2-dc2c-40fe-9927-2d4b1cdfd565",
+    "47b31a9c-4f8b-4ae7-9a78-1308c2cfe08a",
+    "newsletter",
+    "featured_blog_GFY84x"
+  ]
+}

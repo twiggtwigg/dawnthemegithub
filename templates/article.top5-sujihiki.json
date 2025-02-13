@@ -1,0 +1,160 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image_BkCB4e": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "small"
+          }
+        },
+        "title_7cqnbi": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "content_VQLfn8": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image_BkCB4e",
+        "title_7cqnbi",
+        "content_VQLfn8"
+      ],
+      "settings": {
+      }
+    },
+    "dab64165-db66-4e0d-a2f5-8dd52bbf611a": {
+      "type": "ep-blog-feature-products",
+      "blocks": {
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-1": {
+          "type": "product",
+          "settings": {
+            "featured_product": "moritaka-ishime-sujihiki-270mm",
+            "text": "<p>A couple of years before starting at Knifewear, I was the chef of my own restaurant and looking for a change of scenery. I had just bought a gigantic smoker with the idea of getting into competition BBQ and eventually opening a BBQ joint of my own. One of the things I discovered early on in my research was that you are marked on the quality of your slicing in competitions; you lose points for uneven and jagged slices. I decided that I needed a slicer just as big as my smoker so I would be able to slice even the biggest brisket with one motion. — Enter the Moritaka Ishime.<\/p><p>Moritaka-san’s sujihikis have the greatest range of sizes of all of the lines we carry. He makes everything from a baby-sized 210mm slicer all the way up to the gargantuan 360mm slicer that I bought for briskets. Moritaka knives seem to be a little more rugged compared to other knives made from similar steels. Maybe it’s because of the cold hammering process that gives these knives their rocky appearance helps with edge retention or that they are a little thicker and heftier than other knives.<\/p><p>If you’ve ever been hesitant in getting a carbon steel knife, a sujihiki could be the perfect shape to take the plunge on; when you’re slicing fatty hunks of meat, rusting doesn’t tend to be as big an issue.<\/p>",
+            "review": false,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "f0ecf7c3-af35-4fe9-a4d3-4481d52de45f": {
+          "type": "product",
+          "settings": {
+            "featured_product": "fujimoto-hammer-tone-sld-sujihiki-270mm",
+            "text": "<p>This will easily be one of the most badass knives in your kits. Whether you're slicing it up at a buffet carving station or want to impress the in-laws with your holiday turkey: The Hammer Tone makes an impact.<\/p><p>Fujimoto knives are made by a team of experts, each one specializing in a specific part of the process. This allows each craftsman to master a specific skill, and far exceed the precision and consistency of a jack-of-all-trades. The SLD steel can sit for hours without rusting, but will offer the sharpness and edge retention of more traditional high-carbon steels.<\/p>",
+            "review": false,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "88889df0-8812-4097-8230-e21c566d5668": {
+          "type": "product",
+          "settings": {
+            "featured_product": "masashi-sld-damascus-sujihiki-270mm",
+            "text": "<p>One of my favourite blacksmiths that we work with is Masashi-san. Not only are his blades spectacular, he’s a really nice guy and a riot to hang out with. He prefers to work with SLD, a stainless steel from Hitachi that is usually used for punching shapes out of other steels (so you know it’s gunna be sharp). He also has a couple of stellar finishes up his sleeve that I just love.<\/p><p>I think that the sexiest slicers come from Masashi-san’s workshop and I don’t care who knows it! Check out the mirror polished Shiroshu and etched kurochi Kuroshu lines; both are beautiful damascus with their own appeal. I would give my left foot for a 270mm Kuroshu sujihiki, no questions asked.<\/p><p>Masashi-san’s knives really appeal to culinary professionals. They are easy to care for, slightly more rugged than other knives of a similar hardness, and draw a crowd when in use. If you sliced an Easter ham for you family with one of these, you would go down in family history. For those who want something even bigger, check out Masashi-san’s maguro bocho. Technically it’s for cleaning large fish like tuna but I’ve used one on Montreal smoked meat and I’ve never felt like more of a bad-ass.<\/p>",
+            "review": false,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "6a66a6e1-f21a-4e3e-a58b-196aee924955": {
+          "type": "product",
+          "settings": {
+            "featured_product": "yu-kurosaki-r2-senko-ei-kiritsuke-sujihiki-240mm",
+            "text": "<p>Yu Kurosaki and his brother, Makoto Kurosaki, are sorta like the Cohen Brothers of knifemaking: they do incredible work, and have a serious cult following. Every Japanese knife collector has, or plans to have, a Kurosaki knife. His R2 Senko series is the definition of 'laser' when talking about ultra-thin, razor sharp knives.<\/p><p>I also love that it’s available as a smaller slicer. Depending on the kitchen you are working in, a 270mm slicer might be too long but a 240mm is perfect. Kitchens can be cramped and something to consider when choosing a slicer is knowing whether you’ll have room to use it.<\/p>",
+            "review": false,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "563fc421-4bc4-44d4-9a14-1c9f79d2a370": {
+          "type": "product",
+          "settings": {
+            "featured_product": "fujiwara-denka-sujihiki-270mm",
+            "text": "<p>Come on. We'd be insane not to mention the legendary Denka. Remember that old-school carving knife and fork set that your grandpa kept locked away in that velvet-lined box for special occasions? Yeah, this knife blows that one out of the water, but if your grandpa built that set today, you know he'd reach for the Denka slicer. <\/p><p>What can I say about this knife that its looks don't? It's made from some of the hardest high-carbon steel around, meaning it'll stay sharp for much longer than other knives. Despite this, the Super Blue Carbon Steel blade won't rust as easily, and is a little more durable around harder foods. <\/p>",
+            "review": false,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-1",
+        "f0ecf7c3-af35-4fe9-a4d3-4481d52de45f",
+        "88889df0-8812-4097-8230-e21c566d5668",
+        "6a66a6e1-f21a-4e3e-a58b-196aee924955",
+        "563fc421-4bc4-44d4-9a14-1c9f79d2a370"
+      ],
+      "settings": {
+        "layout": "large",
+        "hide-price": false
+      }
+    },
+    "rich_text_9T4URr": {
+      "type": "rich-text",
+      "blocks": {
+        "text_pnW7nM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The most important thing when selecting a sujihiki, or any knife for that matter, is that it feels good in your hand and you are excited to use it. You should look at your slicer and imagine cutting into a perfectly roasted prime rib. You should feel inspired and proud. A sujihiki is a knife that you get to show off with, impress your friends and family, and eventually becomes a family heirloom. Take your time and find the right one.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_pnW7nM"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "20bab789-4672-40e8-8bb8-5e431e45730f": {
+      "type": "ep-blog-author",
+      "settings": {
+      }
+    },
+    "1655832228289470c4": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Recent blog posts",
+        "heading_size": "h1",
+        "blog": "articles",
+        "post_limit": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-2",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "dab64165-db66-4e0d-a2f5-8dd52bbf611a",
+    "rich_text_9T4URr",
+    "20bab789-4672-40e8-8bb8-5e431e45730f",
+    "1655832228289470c4"
+  ]
+}

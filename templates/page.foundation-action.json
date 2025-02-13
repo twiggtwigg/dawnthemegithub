@@ -1,0 +1,87 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "image_banner_A79ttw": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_eL7pye": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Knifewear Foundation",
+            "heading_size": "h1"
+          }
+        },
+        "text_Aj8kdC": {
+          "type": "text",
+          "settings": {
+            "text": "Knifewear has donations 50% of all knife sharpening proceeds since 2011, totalling $1,524,983 million donated to date*.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_eL7pye",
+        "text_Aj8kdC"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Masashi_engraving_in-store-38_b38683b2-be2f-4477-9690-7f9432cf6323.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-72f4d091-a18d-4ddc-9818-8a6a05db313d",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "ep_multicolumn_YCcFLA": {
+      "type": "ep-multicolumn",
+      "settings": {
+        "title": "",
+        "content_source": "metaobject",
+        "metaobject-name": "knifewear_foundation_article",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "block_limit": 39,
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner_A79ttw",
+    "main",
+    "ep_multicolumn_YCcFLA"
+  ]
+}

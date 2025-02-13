@@ -1,0 +1,169 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image_9Lhh8i": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "small"
+          }
+        },
+        "title_yJBqPe": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share_HgLFVX": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content_M8eBxC": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image_9Lhh8i",
+        "title_yJBqPe",
+        "share_HgLFVX",
+        "content_M8eBxC"
+      ],
+      "settings": {
+      }
+    },
+    "dab64165-db66-4e0d-a2f5-8dd52bbf611a": {
+      "type": "ep-blog-feature-products",
+      "blocks": {
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-0": {
+          "type": "product",
+          "settings": {
+            "featured_product": "haruyuki-shiso-sujihiki-240mm",
+            "text": "<p>The Shiso is both a staff and customer favourite. With Aogami super as the hard core steel and a softer stainless outer layer, chefs love these knives as their daily drivers due to their incredible edge retention and their rustic look. The rough hammering on the side of this knife is called \"Tsuchime\" and in addition to making the knife super beautiful, it also helps keep friction to a minimum. They are also super easy to keep sharp due to their carbon steel core! If you want a knife that looks great and is easy to keep an edge on, this is your guy.<\/p>",
+            "review": false,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-1": {
+          "type": "product",
+          "settings": {
+            "featured_product": "masashi-sld-damascus-sujihiki-270mm",
+            "text": "<p>I love this knife so much because it really embodies the sexiness of meat slicing. A beautiful brisket deserves a beautiful blade. Its mirror-polished damascus finish reduces friction against the meat and makes an incredibly smooth and juicy texture. A bonus is that Masashi uses SLD Semi stainless steel, which CAN rust but is relatively easy to take care of. This knife’s edge also lasts an insane amount of time due to the hardness that Masashi can achieve with his steel. I swear he’s a wizard. <\/p>",
+            "review": false,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "f0ecf7c3-af35-4fe9-a4d3-4481d52de45f": {
+          "type": "product",
+          "settings": {
+            "featured_product": "fujimoto-nashiji-sujihiki-270mm",
+            "text": "<p>The Big Bang (for your buck). The Fujimoto Nashiji is perfect for folks who are “ballin' on a budget”. It’s a crazy versatile slicing knife with a badass slanted ‘kiritsuke tip’. With a carbon-steel core made out of Aogami #2 steel (blue #2), this knife sharpens up really nicely and hones even better. Plus, like the Koishi, it has stainless steel cladding to keep that carbon steel nice and safe! Seriously, for 265 buckaroos, you’re getting so much more than just a basic slicer. If you love barbecue, then this is a knife you’ll treasure forever.<\/p><p><\/p>",
+            "review": false,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "88889df0-8812-4097-8230-e21c566d5668": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "featured_product": "sakai-takayuki-brisket-knife-300mm",
+            "text": "<p>This big guy is the ultimate brisket-slicing knife. It’s 300mm long, and only the heftiest briskets can’t be cut in a single stroke of this blade. It’s nothing fancy, but if you’re a barbecue connoisseur who values function over form, this is your knife. Very simple and sleek, with a super flat profile for the optimal slice straight through your meat cake (it was originally designed for cake, but it's perfect for brisket). I also love this knife for any kitchen tasks requiring a long knife, like cutting up a watermelon or carving a turkey, so it’s great for people that don’t do<em>that<\/em>much smoking. It won’t hold its edge for as long as the other knives on this list, but it is much more durable. If you need a solid knife that just works, grab this guy.<\/p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-0",
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-1",
+        "f0ecf7c3-af35-4fe9-a4d3-4481d52de45f",
+        "88889df0-8812-4097-8230-e21c566d5668"
+      ],
+      "settings": {
+        "layout": "large",
+        "hide-price": false
+      }
+    },
+    "rich_text_bntepR": {
+      "type": "rich-text",
+      "blocks": {
+        "text_83b9r7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Of these four knives, I’m confident every barbecue lover will find a fantastic knife that fits their style and does exactly what they need. Briskets are my specialty, but roasts, turkeys, and other large cuts of meat don’t stand a chance against any of these knives. From putting on a show at the head of the table to serving delicious food to friends and family, these knives will help you do whatever it takes to impress!<\/p>"
+          }
+        },
+        "button_ij8w7K": {
+          "type": "button",
+          "settings": {
+            "button_label": "Snag A Sujihiki!",
+            "button_link": "shopify:\/\/collections\/sujihiki",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_83b9r7",
+        "button_ij8w7K"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "646d0675-b40c-4b79-b636-757099bbc0d0": {
+      "type": "ep-blog-author",
+      "settings": {
+      }
+    },
+    "1655832228289470c4": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Recent blog posts",
+        "heading_size": "h1",
+        "blog": "articles",
+        "post_limit": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-2",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "dab64165-db66-4e0d-a2f5-8dd52bbf611a",
+    "rich_text_bntepR",
+    "646d0675-b40c-4b79-b636-757099bbc0d0",
+    "1655832228289470c4"
+  ]
+}

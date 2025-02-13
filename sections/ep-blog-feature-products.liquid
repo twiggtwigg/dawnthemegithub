@@ -1,0 +1,231 @@
+{%- assign id = section.id -%}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign blocks = section.blocks -%}
+{% comment %} End content settings {% endcomment %}
+
+{% comment %} Advanced {% endcomment %}
+{%- assign css_class = section.settings.css_class -%}
+{%- assign custom_css = section.settings.custom_css -%} 
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  {%
+    render 'css-loop',
+    css: custom_css,
+    id: id
+  %}
+{% endstyle %}
+
+{% if blocks.size > 0 %}
+  <section class="article-template__content page-width page-width--narrow rte">
+    {% for block in blocks %}
+      {% comment %} Content settings {% endcomment %}
+      {%- assign product = all_products[block.settings.featured_product] -%}
+      {% comment %} End content settings {% endcomment %}
+
+      
+      {%- assign collection_handles = product.collections | map: 'handle' -%}
+
+      {% if product.empty? %}
+        {%- assign section_onboarding = true -%}
+      {% else %}
+        {%- assign section_onboarding = false -%}
+      {% endif %}
+
+      <div class="product-{{ product.id }} ep-article-product-features">
+        <div
+          class="
+            product_section
+            js-product_section
+            product--description-{{ product_description_position }}
+          "
+          data-block-id="{{ block.id }}"
+          {{ block.shopify_attributes }}
+        >
+        {% unless section.settings.layout == 'panel' %}<div class="container fourteen">{% endunless %} 
+
+  {% if section.settings.layout == 'small' %} 
+            <div class="one-half column medium-down--one-whole">
+
+
+        {% else  %} 
+             <div class="one-whole column medium-down--one-whole">
+        {% endif %}
+      
+
+              {% if section_onboarding %}
+                {% capture i %}{% cycle "1", "2" %}{% endcapture %}
+                {{ 'product-' | append: i | placeholder_svg_tag: 'placeholder-svg placeholder-svg--product' }}
+              {% else %}
+ <a href="{{ product.url }}">{{ product.featured_image | image_url: width: 800 | image_tag }}</a>
+              {% endif %}
+            </div>
+
+         {% if section.settings.layout == 'small' %} 
+           <div class="one-half column medium-down--one-whole product__details product__details">
+
+      
+        {% else %} 
+            <div class="one-whole column medium-down--one-whole product__details product__details">
+        {% endif %}
+                <h3 class="product_name">
+                  <a href="{{ product.url }}">{{ product.title }} {% if section.settings.hide-price == false %} 
+                 
+                   
+                    {%- render 'price',
+                    product: product,
+                    use_variant: true,
+                    show_badges: true,
+                    price_class: 'price--large'
+                  -%}
+
+                        {% endif %}
+                  </a>   </h3>    
+              
+                <div class="feature_divider"></div>
+
+                    <div class="feature-details {% if block.settings.review == true and section.settings.layout == 'large'%}feature-details-w-review{% endif %}">
+                      {% if block.settings.text != blank %}
+                        <div class="description">
+                          {{ block.settings.text }}
+
+
+                          {% if block.settings.fun-fact-heading != blank %}
+              <blockquote class="bq-wide">
+<h4>{{ block.settings.fun-fact-heading }}</h4>
+  {{ block.settings.fun-fact }}
+    </blockquote>
+   {% endif %}
+
+                      <!--      <a class="blog__read-more-button global-button global-button--text" href="{{ product.url }}">View more</a> -->
+                      
+                        </div>
+                      {% endif %}
+
+
+     {% if section.settings.layout == 'small' %} 
+           
+
+
+        {% elsif section.settings.layout == 'large' %} 
+             
+            <!-- Yopto top Start -->
+    {% if block.settings.review == true %}
+       {% if request.locale.iso_code == 'en' %}
+        <div class="yotpo yotpo-shoppers-say" data-product-id="{{ product.id }}">&nbsp;</div>
+      {% endif %}
+   {% endif %}
+      <!-- Yopto top end -->
+       
+ {% endif %}
+                         
+
+                 
+                    </div>
+
+              
+                          <div class="feature_divider"></div>
+
+             
+
+              
+
+
+            </div>
+           {% unless section.settings.layout == 'panel' %}</div>{% endunless %} 
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Blog Feature Products",
+    "settings": [
+       {
+        "type": "radio",
+        "id": "layout",
+        "label": "Product Layout",
+        "default": "large",
+        "options": [
+        {
+            "value": "panel",
+            "label": "3 Panel"
+          },
+          {
+            "value": "small",
+            "label": "Small"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          }
+        ]
+      },
+      {
+          "type": "checkbox",
+          "id": "hide-price",
+          "label": "Hide Prices",
+          "default": false
+        }
+    ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "featured_product",
+          "label": "Product"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Promotion description details.</p>"
+        },
+        {
+          "type": "checkbox",
+          "id": "review",
+          "label": "Feature Review (Large Format Only)",
+          "default": true
+        },
+ {
+          "type": "text",
+          "id": "fun-fact-heading",
+          "label": "Fun Fact heading"
+
+        },
+        {
+          "type": "richtext",
+          "id": "fun-fact",
+          "label": "Fun Fact"
+
+        }
+      ]
+    }
+  ],  "presets": [
+    {
+      "name": "Blog Feature Products",
+      "category": "Product",
+      "blocks": [
+        {
+          "type": "product"
+        },
+        {
+          "type": "product"
+        }
+      ]
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

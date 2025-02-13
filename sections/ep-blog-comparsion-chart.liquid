@@ -1,0 +1,266 @@
+{%- assign id = section.id -%}
+
+{% comment %} Content settings {% endcomment %}
+{%- assign blocks = section.blocks -%}
+{% comment %} End content settings {% endcomment %}
+
+{% comment %} Advanced {% endcomment %}
+{%- assign css_class = section.settings.css_class -%}
+{%- assign custom_css = section.settings.custom_css -%}
+
+{% comment %} Section specific CSS {% endcomment %}
+{% style %}
+  {%
+    render 'css-loop',
+    css: custom_css,
+    id: id
+  %}
+{% endstyle %}
+
+{% if blocks.size > 0 %}
+  <section class="section {{ css_class }} {% if section.settings.wide_display == true %}is-width-wide has-no-side-gutter{% endif %}">
+    {% for block in blocks %}
+      {% comment %} Content settings {% endcomment %}
+      {%- assign product = all_products[block.settings.featured_product] -%}
+      {% comment %} End content settings {% endcomment %}
+
+      {% if product != blank %}
+        {% render 'product__structured-data', product: product %}
+      {% endif %}
+
+      {%- assign collection_handles = product.collections | map: 'handle' -%}
+
+      {% if product.empty? %}
+        {%- assign section_onboarding = true -%}
+      {% else %}
+        {%- assign section_onboarding = false -%}
+      {% endif %}
+      <div>
+        <h3 class="product_name">
+          <a href="{{ product.url }}">
+            {{- product.title }} -
+
+            <noscript>
+              <style>
+                .price-ui--loading {
+                  display: block !important;
+                  opacity: 1 !important;
+                }
+              </style>
+            </noscript>
+            {% assign compare_at_price = false %}
+
+            {% if product.compare_at_price and product.compare_at_price != product.price %}
+              {% if product.compare_at_price_varies %}
+                {%- capture price_min -%}
+                            {%-
+                              render 'price-ui-templates',
+                              template: 'price-min',
+                              value: product.compare_at_price_min,
+                            -%}
+                          {%- endcapture -%}
+
+                {%- capture price_max -%}
+                            {%-
+                              render 'price-ui-templates',
+                              template: 'price-max',
+                              value: product.compare_at_price_max,
+                            -%}
+                          {%- endcapture -%}
+
+                {%- assign compare_at_price = 'product.price.range_html'
+                  | t: price_min: price_min, price_max: price_max
+                -%}
+              {% else %}
+                {%- capture compare_at_price -%}
+                            {%-
+                              render 'price-ui-templates',
+                              template: 'price',
+                              value: product.compare_at_price,
+                            -%}
+                          {%- endcapture -%}
+              {% endif %}
+            {% endif %}
+
+            {% if product.price_varies %}
+              {%- capture price_min -%}
+                          {%-
+                            render 'price-ui-templates',
+                            template: 'price-min',
+                            value: product.price_min,
+                          -%}
+                        {%- endcapture -%}
+
+              {%- capture price_max -%}
+                          {%-
+                            render 'price-ui-templates',
+                            template: 'price-max',
+                            value: product.price_max,
+                          -%}
+                        {%- endcapture -%}
+
+              {%- assign price = 'product.price.range_html' | t: price_min: price_min, price_max: price_max -%}
+            {% else %}
+              {%- capture price -%}
+                          {%-
+                            render 'price-ui-templates',
+                            template: 'price',
+                            value: product.price,
+                          -%}
+                        {%- endcapture -%}
+            {% endif %}
+
+            {%-
+              render 'price-ui-templates',
+              template: 'price-ui',
+              compare_at_price: compare_at_price,
+              price: price,
+              unit_pricing: false,
+            -%}
+          </a>
+        </h3>
+
+        <div class="feature-details">
+          {% if block.settings.text != blank %}
+            <div class="description">
+              {{ block.settings.text }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      <div class="blog-comparsion-grid">
+        <div class="product-{{ product.id }}">
+          <div
+            class="
+              product_section
+              js-product_section
+              product--description-{{ product_description_position }}
+            "
+            data-block-id="{{ block.id }}"
+            {{ block.shopify_attributes }}
+          >
+            <div class="">
+              {%
+                render 'product-images',
+                product: product,
+                display_thumbnails: section.settings.product_thumbs,
+                enable_product_lightbox: section.settings.enable_product_lightbox,
+                enable_thumbnail_slider: section.settings.enable_thumbnail_slider,
+                enable_zoom: section.settings.activate_zoom,
+                gallery_arrows: section.settings.gallery_arrows,
+                set_product_height: section.settings.set_product_height
+                slideshow_transition: section.settings.slideshow_animation,
+                slideshow_speed: section.settings.slideshow_speed,
+                thumbnail_position: section.settings.thumbnail_position,
+                video_looping: section.settings.video_looping,
+              %}
+            </div>
+
+            <a class="blog__read-more-button global-button global-button--text" href="{{ product.url }}"
+              >View Product</a
+            >
+          </div>
+        </div>
+        <div>
+          <img src="{{ block.settings.yakitori | img_url: 'large' }}">
+          <p class="blog__read-more-button global-button global-button--text">{{ block.settings.text_yaki }}</p>
+        </div>
+
+        <div>
+          <img src="{{ block.settings.burgers | img_url: 'large' }}">
+          <p class="blog__read-more-button global-button global-button--text">{{ block.settings.text_burger }}</p>
+        </div>
+        <div>
+          <img src="{{ block.settings.feeds | img_url: 'large' }}">
+          <p class="blog__read-more-button global-button global-button--text">{{ block.settings['text-people'] }}</p>
+        </div>
+      </div>
+      <div class="feature_divider"></div>
+    {% endfor %}
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Comparison Chart - Konro",
+  "settings": [
+
+  ],
+"blocks": [
+  {
+    "type": "product",
+    "name": "Product",
+    "settings": [
+      {
+        "type": "product",
+        "id": "featured_product",
+        "label": "Product"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Promotion description details.</p>"
+      },
+
+      {
+        "type": "text",
+        "id": "text-size",
+        "label": "Size/Demensions"
+      },
+{
+        "type": "image_picker",
+        "id": "yakitori",
+        "label": "Column Image 2",
+        "info": "1280 x 1280px .jpg recommended"
+      },
+{
+        "type": "text",
+        "id": "text_yaki",
+        "label": "Column Text 2"
+      },
+{
+        "type": "image_picker",
+        "id": "burgers",
+        "label": "Column Image 3",
+        "info": "1280 x 1280px .jpg recommended"
+      },
+{
+        "type": "text",
+        "id": "text_burger",
+        "label": "Column Text 3"
+      },
+{
+        "type": "image_picker",
+        "id": "feeds",
+        "label": "Column Image 4",
+        "info": "1280 x 1280px .jpg recommended"
+      },{
+        "type": "text",
+        "id": "text-people",
+        "label": "Column Text 4"
+      }
+    ]
+  }
+],  "presets": [
+  {
+    "name": "Comparison Chart - Konro",
+    "category": "Product",
+    "blocks": [
+      {
+        "type": "product"
+      },
+      {
+        "type": "product"
+      }
+    ]
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

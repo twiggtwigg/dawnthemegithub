@@ -1,0 +1,167 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image_gNLPUq": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "small"
+          }
+        },
+        "title_fEgg7n": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share_EcUbd9": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content_Jm9xQg": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image_gNLPUq",
+        "title_fEgg7n",
+        "share_EcUbd9",
+        "content_Jm9xQg"
+      ],
+      "settings": {
+      }
+    },
+    "dab64165-db66-4e0d-a2f5-8dd52bbf611a": {
+      "type": "ep-blog-feature-products",
+      "blocks": {
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-0": {
+          "type": "product",
+          "settings": {
+            "featured_product": "moritaka-ishime-honesuki-150mm",
+            "text": "<p>All of the family experience and history that Moritaka-san carries with him might have something to do with how perfect this knife is; I imagine that you learn a thing or two growing up in a family that has been blacksmithing for over 700 years.<\/p><p>The rocky-looking finish is awesome, plus it’s beefier than most other honesukis. The thicker blade allows you to easily cut through the soft breastbone of a bird without having to worry too much about chipping. Normally Moritaka knives rust a bit easily, but I’ve found that rusting isn’t as big a deal on a carbon steel knife primarily used for butchery, as long as you you do a good job of washing and drying your blade when you are finished as you would when using a knife on any kind of raw meat.<br\/><br\/><strong>Fun Fact<\/strong><\/p><p><em>This exact knife is recommended in the yakitori bible,<\/em><a href=\"https:\/\/ca.phaidon.com\/store\/food-cook\/chicken-and-charcoal-9780714876450\/\">Chicken & Charcoal<em> by Matt Abergel<\/em><\/a><em>. A must read for ‘cue nerds, the Japanese obsessed, and anyone who thinks that food tastes better grilled on a stick.<\/em><\/p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-1": {
+          "type": "product",
+          "settings": {
+            "featured_product": "seki-kanetsune-honesuki-150mm",
+            "text": "<p>I feel like this knife would make any professional chicken cutter-upper's day a lot easier. The big handle is easy to grip while processing dozens of birds, the semi-stainless SKD-12 blade is super durable and quickly takes an edge. Plus, it’s a very cost effective option. Even though this is a stamped blade, you’d be surprised at how much of the work of making these knives is actually done by hand. The nylon sheath allows you to store the knife safely, either in your knife bag or attached to your belt for accessibility.<\/p><p>Perfect for those looking to try something out on a whim, or for the local butcher to outfit their staff.<\/p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "f0ecf7c3-af35-4fe9-a4d3-4481d52de45f": {
+          "type": "product",
+          "settings": {
+            "featured_product": "fujimoto-nashiji-honesuki-150mm",
+            "text": "<p>The entire Fujimoto Nashiji line is a great starting point for people looking to try their hand at carbon steel knives; the honesuki is no different. This is one of several lines we carry that uses both carbon and stainless steel in the blade; the hard carbon makes a sharp edge and jacket of stainless really cuts down the chance of rust forming. Rust on a knife can be a huge bummer. This line is very popular among professional cooks and chefs because they look so cool, hold an awesome edge, and are a lot easier to care for than a straight-up carbon knife. The huge bang for buck doesn’t hurt either.<\/p><p>Oh, and did I mention this knife is super pretty? Just look at it! The kiritsuke tip, the sleek hammered blade, the burnt chestnut handle... I'm starting to drool just typing this, so we're gonna move on to my next pick.<\/p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "88889df0-8812-4097-8230-e21c566d5668": {
+          "type": "product",
+          "settings": {
+            "featured_product": "masashi-shiroshu-honesuki-150mm",
+            "text": "<p>If you don’t have a knife from <a href=\"https:\/\/knifewear.com\/collections\/masashi-yamamoto\">Masashi-san<\/a> yet, you may as well start here. He's one of the most talented blacksmiths we've ever met, and he does every step of the knife-making process himself. His honesukis are more durable than most thanks to a thick spine and wide bevel, so don't be afraid to drive this 4x4 through the mud a little! (That's an analogy. Please don't actually drive your knives through mud). The hypnotic damascus finish is the icing on the cake, making this knife as gorgeous as it is functional.<\/p><p>If you prefer a black finish to your knives, check out Masashi-san's <a href=\"https:\/\/knifewear.com\/products\/masashi-kuroshu-honesuki-150mm?variant=38008371118254\">Kuroshu Honesuki,<\/a> or his <a href=\"\/products\/masashi-vs1-kaijin-honesuki-150mm\" title=\"Masashi VS1 KAIJIN Honesuki 150mm\">Kaijin honesuki<\/a> for a rock-solid option.<\/p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "6a66a6e1-f21a-4e3e-a58b-196aee924955": {
+          "type": "product",
+          "settings": {
+            "featured_product": "masakage-zero-honesuki-150mm",
+            "text": "<p>I had to include it, it’s such a stunner. I’m a sucker for Aogami Super steel (my first honesuki was made from the stuff) and the bad-ass look of the Zero. I remember waffling between the Ishime honesuki and this one but it was the harder steel that won me over in the end. (There’s a good chance I’ll eventually end up getting myself the Moritaka as well.) The Zero has the hardest steel of any we’ve looked at so far but it’s not as delicate as you might think; I’ve been cutting through small chicken bones with mine for 5 years. I’ve never chipped it and I’ve only sharpened it twice. KA-BOOM! Plus, just look at that Ironwood handle. So stunning.<\/p>",
+            "review": false,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-0",
+        "template--15962749042862__dab64165-db66-4e0d-a2f5-8dd52bbf611a-1669404136d9ce1bd1-1",
+        "f0ecf7c3-af35-4fe9-a4d3-4481d52de45f",
+        "88889df0-8812-4097-8230-e21c566d5668",
+        "6a66a6e1-f21a-4e3e-a58b-196aee924955"
+      ],
+      "settings": {
+        "layout": "large",
+        "hide-price": false
+      }
+    },
+    "rich_text_DBDaxr": {
+      "type": "rich-text",
+      "blocks": {
+        "text_FQWFFW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No matter which honesuki you choose, you’ll be stoked to learn how to break down a chicken like the pros. I look for any excuse to fry up a big batch of buttermilk chicken, or break out the konro for a grilled-chicken-on-stick party.<\/p><p><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_FQWFFW"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "646d0675-b40c-4b79-b636-757099bbc0d0": {
+      "type": "ep-blog-author",
+      "settings": {
+      }
+    },
+    "1655832228289470c4": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Recent blog posts",
+        "heading_size": "h1",
+        "blog": "articles",
+        "post_limit": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-2",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "dab64165-db66-4e0d-a2f5-8dd52bbf611a",
+    "rich_text_DBDaxr",
+    "646d0675-b40c-4b79-b636-757099bbc0d0",
+    "1655832228289470c4"
+  ]
+}

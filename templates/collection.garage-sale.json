@@ -1,0 +1,154 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "multicolumn_Ew63rC": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_QPHPge": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "Shop Discounts Knives and accessories ",
+            "link": "shopify://collections/garage-sale-on-sale"
+          }
+        },
+        "column_RwBtqk": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "Shop Rare, Exclusive and Hard to Find Knives ",
+            "link": "shopify://collections/rare-exclusive-and-hard-to-find"
+          }
+        }
+      },
+      "block_order": [
+        "column_QPHPge",
+        "column_RwBtqk"
+      ],
+      "custom_css": [
+        "li div.multicolumn-card.content-container {background: black !important;}",
+        ".multicolumn-card__info {background: black; padding: 0; border: 2px solid black;}",
+        "a.link.animate-arrow {color: white; margin-top: 0; font-family: \"Univers Next\", sans-serif; text-transform: uppercase; padding: 0.5rem 1.5rem; vertical-align: middle; width: 100%; text-align: center;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "custom_css": [
+        "details#Details-filter\\.p\\.m\\.custom\\.price_bracket_usd-template--17260048711854__main,details#Details-filter\\.p\\.m\\.custom\\.price_bracket_ca-template--17260048515246__product-grid,details#Details-filter\\.p\\.m\\.custom\\.price_bracket_usd-template--17260048515246__product-grid,details#Details-Mobile-filter\\.p\\.m\\.custom\\.price_bracket_ca-template--17260048515246__product-grid,details#Details-Mobile-filter\\.p\\.m\\.custom\\.price_bracket_usd-template--17260048515246__product-grid {display: none;}"
+      ],
+      "settings": {
+        "products_per_page": 48,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_QxhUdC": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_me8jNM": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Garage Sale",
+            "heading_size": "h1"
+          }
+        },
+        "caption_FXBWYn": {
+          "type": "caption",
+          "settings": {
+            "caption": "For those that know, the week-long Garage Sale is the most fun time to visit Knifewear. ",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "text_UTwLdA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Over the years the event has grown to be legendary amongst chefs and knife aficionados, as well as with everyday people who love a deal as much as they love to cook. The action mostly happens on Monday, the first day of the sale, but there's great deals to be had all week.<br/></p><p>The items at the Garage Sale are all the items that Kevin pick's up on his trips to Japan, or stuff that our blacksmith friends have helped us to find. He buys prototypes (new products that blacksmiths are experimenting with), one of a kind knives (like some of the fancy-handled knives), retired sample knives (and some repaired knives), new knife lines, Smokin' deals, and other unique things he finds!</p>",
+            "text_style": "body"
+          }
+        },
+        "button_V7bNTt": {
+          "type": "button",
+          "settings": {
+            "button_label": "Read more about Garage Sale",
+            "button_link": "shopify://blogs/articles/knifewear-garage-sale",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_me8jNM",
+        "caption_FXBWYn",
+        "text_UTwLdA",
+        "button_V7bNTt"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/395044328_1030923471284312_2738791155913791173_n.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "inverse",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "multicolumn_Ew63rC",
+    "product-grid",
+    "image_with_text_QxhUdC"
+  ]
+}

@@ -1,0 +1,151 @@
+<!-- Check if product is avilable in the warehouse and if it isn't....-->
+
+{% if product.tags contains "filter_instock:In Stock" and product.tags contains "garage sale" and settings.show_garageSaleLiveTxt == true and settings.first_dayGarageSale == true and product.has_only_default_variant == true %}
+
+{% unless product.metafields.custom.in_stock_locations.value contains "Warehouse" %}
+
+
+
+
+<!-- Check if it is the first day of the Garage Sale -->
+{% if settings.show_garageSaleLiveTxt == true %}
+
+ {% if product.metafields.custom.in_stock_locations.value contains "Calgary" or 
+        product.metafields.custom.in_stock_locations.value contains  "Edmonton"  or 
+        product.metafields.custom.in_stock_locations.value contains  "Toronto" or 
+        product.metafields.custom.in_stock_locations.value contains  "Ottawa" or
+        product.metafields.custom.in_stock_locations.value contains "Vancouver" %}
+
+ {% endif %}  {% endif %}  
+
+<style> 
+    aftership-aedd,.purchase-details,a.action_button.klaviyo-bis-trigger,.product-form,.product-form__quantity,.swym-wishlist-button-bar {display: none !important;}
+</style>
+
+<div class="gs-disclaimer"> 
+  
+
+<h2 class="related-products__heading inline-richtext h2">Hey Garage Sailor!</h2>
+
+<b>Looking for this knife in store during Garage Sale?</b> It is in stock at 
+{% if product.metafields.custom.in_stock_locations.value contains "Calgary" %}<br>Calgary - <a href="tel:4035140577">(403) 514-0577</a> {% endif %}
+{% if product.metafields.custom.in_stock_locations.value contains  "Edmonton"  %}<br>Edmonton - <a href="tel:5875212034">(587) 521-2034</a> {% endif %}
+{% if product.metafields.custom.in_stock_locations.value contains  "Toronto"  %}<br>Toronto - <a href="tel:4165325555">(416) 532-5555</a> {% endif %}
+{% if product.metafields.custom.in_stock_locations.value contains  "Ottawa"  %}<br>Ottawa - <a href="tel:6136954200">(613) 695-4200</a> {% endif %}
+{% if product.metafields.custom.in_stock_locations.value contains "Vancouver" %}<br>Vancouver - <a href="tel:6042151033">(604)-215-1033</a>{% endif %}
+<br><br>
+During the first day of Garage Sale, stock in our retail locations is reserved for in store customers. In store stock will be made avilable on day two of the Garage Sale online. 
+</div>
+
+{% endunless %}
+{% endif %}  
+
+
+
+ <!-- Display Garage Sale Disclaimer -->
+
+
+{% if settings.show_garageSaleLiveTxt == true and  product.tags contains "garage sale"  %}   
+
+               <div class="gs-disclaimer"> 
+                  <p> {{ settings.garageSaleLiveTxt }}</p>
+               <style>.findify-sticker-garage-sale { display: block !important; }</style>
+                </div>
+
+
+{% endif %}
+
+
+<!-- Swym button on product pages --><div class="ep-paint-block-wishlist">        <div class="swym-wishlist-button-bar"></div></div>
+<!-- Swym button on product pages -->
+
+
+{% if product.available == false and product.tags contains "kitchen-knives" %}<div class="gs-disclaimer"> 
+<a href="https://knifewear.com/blogs/articles/why-are-japanese-knives-always-sold-out-and-how-to-get-them"><b>Frustrated?</b> Learn more about why Japanese knives are frequently out of stock.</a></div>
+<style>
+    .purchase-details,
+    div.purchase-details__quantity.product-quantity-box {
+    display: none !important;
+}</style>
+
+{% endif %}  
+
+
+{% if product.metafields.custom.hide_back_in_stock_form == true %}
+<style>
+    a.product-form__buttons.product-form__submit.button.button--full-width.button--secondary.klaviyo-bis-trigger{
+    display: none !important;
+}</style>
+{% endif %} 
+
+
+
+<!-- Konro out of stock in Warehouse -->
+
+
+
+{% if product.tags contains "filter_instock:In Stock" and product.tags contains "YGroup_konro_grill" %}
+
+{% unless product.metafields.custom.in_stock_locations.value contains "Warehouse" %}
+    
+    <div class="gs-disclaimer"> 
+       
+
+        <h2 class="related-products__heading inline-richtext h2">
+        Hey Griller!
+      </h2>
+<b>Looking for this Konro? It is currently sold out for delivery, but is in stock in these stores:</b> 
+{% if product.metafields.custom.in_stock_locations.value contains "Calgary" %}<br>Calgary - <a href="tel:4035140577">(403) 514-0577</a> {% endif %}
+{% if product.metafields.custom.in_stock_locations.value contains  "Edmonton"  %}<br>Edmonton - <a href="tel:5875212034">(587) 521-2034</a> {% endif %}
+{% if product.metafields.custom.in_stock_locations.value contains  "Toronto"  %}<br>Toronto - <a href="tel:4165325555">(416) 532-5555</a> {% endif %}
+{% if product.metafields.custom.in_stock_locations.value contains  "Ottawa"  %}<br>Ottawa - <a href="tel:6136954200">(613) 695-4200</a> {% endif %}
+{% if product.metafields.custom.in_stock_locations.value contains "Vancouver" %}<br>Vancouver - <a href="tel:6042151033">(604)-215-1033</a>{% endif %}
+<br><br>
+Give us a call if you want to get one set aside for pickup!
+</div>
+
+
+<style>
+    product-form,
+    .product-form__input.product-form__quantity,
+    .aftership-container,
+    .swym-wishlist-button-bar {
+    display: none !important;
+}
+</style>
+
+{% endunless %}
+{% endif %} 
+
+{% if product.tags contains "filter_instock:In Stock" and product.tags contains "YGroup_larch_boards" %}
+
+{% unless product.metafields.custom.in_stock_locations.value contains "Warehouse" %}
+
+    
+    <div class="gs-disclaimer"> 
+<b>Looking for this cutting board? It is currently sold out for delivery, but is in stock in these stores:</b> 
+{% if product.metafields.custom.in_stock_locations.value contains "Calgary" %}<br>Calgary - <a href="tel:4035140577">(403) 514-0577</a> {% endif %}
+{% if product.metafields.custom.in_stock_locations.value contains  "Edmonton"  %}<br>Edmonton - <a href="tel:5875212034">(587) 521-2034</a> {% endif %}
+{% if product.metafields.custom.in_stock_locations.value contains  "Toronto"  %}<br>Toronto - <a href="tel:4165325555">(416) 532-5555</a> {% endif %}
+{% if product.metafields.custom.in_stock_locations.value contains  "Ottawa"  %}<br>Ottawa - <a href="tel:6136954200">(613) 695-4200</a> {% endif %}
+{% if product.metafields.custom.in_stock_locations.value contains "Vancouver" %}<br>Vancouver - <a href="tel:6042151033">(604)-215-1033</a>{% endif %}
+<br><br>
+Give us a call if you want to get one set aside for pickup!
+</div>
+
+
+<style>
+    product-form,
+    .product-form__input.product-form__quantity,
+    .aftership-container,
+    .swym-wishlist-button-bar {
+    display: none !important;
+}
+</style>
+{% endunless %}
+{% endif %} 
+
+
+
+
+

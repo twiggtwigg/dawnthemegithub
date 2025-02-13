@@ -1,0 +1,115 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
+      "settings": {
+      }
+    },
+    "ep_blog_feature_products_qzqkCG": {
+      "type": "ep-blog-feature-products",
+      "blocks": {
+        "product_UKf9QW": {
+          "type": "product",
+          "settings": {
+            "featured_product": "haruyuki-kokuto-nakiri-165mm",
+            "text": "<p>If the first Japanese knife you get will be a nakiri, get this one. Stainless steel is easy to take care of, so you won’t be sweating over a rusty knife. The blade is super pretty and razor sharp, plus a Japanese style handle is a must-try if you’ve never had one before.<\/p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "product_VGRFic": {
+          "type": "product",
+          "settings": {
+            "featured_product": "fujiwara-maboroshi-nakiri-165mm",
+            "text": "<p>Okay, so maybe not every home cook needs a nakiri this big. But professional prep cooks? Heck yes they need a knife this big. I would know, I’ve been one. This big boy will also become your dream knife if you cook for a big family, or you like to meal-prep an entire week in one go. I’m looking at you, crossfitters.<\/p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "product_tFyDgT": {
+          "type": "product",
+          "settings": {
+            "featured_product": "haruyuki-zanpa-nakiri-165mm",
+            "text": "<p>They really don't get better looking than this! The Haruyuki Zanpa has been making waves recently with its incredible good looks, backed up by a reliable, rugged edge forged from AUS10 steel. I love the simple look of the handle too, single-piece handles have become quite trendy and I can understand why!<\/p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        },
+        "product_DpWMD7": {
+          "type": "product",
+          "settings": {
+            "featured_product": "fujiwara-denka-nakiri-165mm",
+            "text": "<p>If you want the best of the best, here it is. Fujiwara-san is a world-renowned knife and sword maker and his Denka series is the cream of the crop. I'm a huge fan of the rustic looks, and the notch at the back of the blade fits your finger perfectly so you can drive the blade with confidence. It’ll also stay sharp waaaay longer than anything else in your kitchen, so you’ll only need to sharpen it once every few years.<\/p>",
+            "review": true,
+            "fun-fact-heading": "",
+            "fun-fact": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_UKf9QW",
+        "product_VGRFic",
+        "product_tFyDgT",
+        "product_DpWMD7"
+      ],
+      "settings": {
+        "layout": "large",
+        "hide-price": false
+      }
+    },
+    "ep_blog_author_nraKRt": {
+      "type": "ep-blog-author",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ep_blog_feature_products_qzqkCG",
+    "ep_blog_author_nraKRt"
+  ]
+}

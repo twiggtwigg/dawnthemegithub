@@ -1,0 +1,350 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "multicolumn_8G6wz6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_iz3Vgn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Takamura-Chromax-petty-135-1.jpg",
+            "title": "Petty",
+            "text": "<p> For small jobs, or if you just like a smaller knife.</p>",
+            "link_label": "Find a Petty",
+            "link": "shopify://collections/petty"
+          }
+        },
+        "column_Kk76Gi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Kokuen-petty-135mm-1.jpg",
+            "title": "Ko-Bunka",
+            "text": "<p>The Ko-Bunka is a smaller version of a Bunka. Any guesses on what “Ko” means in Japanese? You nailed it! It translates to “small.”</p>",
+            "link_label": "Find a Ko-Bunka",
+            "link": "shopify://collections/ko-bunka"
+          }
+        },
+        "column_RbcMCV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Oul-Shironiko-Santoku-180-1.jpg",
+            "title": "Santoku",
+            "text": "<p>Santoku means \"three virtues\". Slicing, dicing, chopping or meat, fish, veggies. This knife does it all.</p>",
+            "link_label": "Find a Santoku",
+            "link": "shopify://collections/santoku"
+          }
+        },
+        "column_YPEe79": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/every_shape.jpg",
+            "title": "Can't figure out what's what?",
+            "text": "<p>Read our article \"Every Japanese Kitchen Knife Shape Explained\"</p>",
+            "link_label": "Click here",
+            "link": "shopify://blogs/articles/every-japanese-kitchen-knife-shape-explained"
+          }
+        },
+        "column_d4BBkC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/nigara-vg10-damascus-bunka-1.jpg",
+            "title": "Bunka",
+            "text": "<p>Like a santoku, but like, more rock and roll.</p>",
+            "link_label": "Find a Bunka",
+            "link": "shopify://collections/bunka"
+          }
+        },
+        "column_UMNbbA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/haruyuki-nishiki-nakiri-165-1.jpg",
+            "title": "Nakiri",
+            "text": "<p>This Japanese veggie knife is becoming a must for Western kitchens.</p>",
+            "link_label": "Find a Nakiri",
+            "link": "shopify://collections/nakiri"
+          }
+        },
+        "column_wyA9Pp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/quiz_square_1600x_2x_15a8079e-f142-45e4-8fdc-9fe75977ea39.png",
+            "title": "",
+            "text": "",
+            "link_label": "Take our Quiz!",
+            "link": "shopify://pages/japanese-knife-gift-quiz"
+          }
+        },
+        "column_KWgyqD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/goma-gyuto-240-1_6912b047-519d-4a0d-95a2-9becf55767ce.jpg",
+            "title": "Gyuto",
+            "text": "<p>The classic chef's knife. Gyuto means \"cow sword\", cool huh?</p>",
+            "link_label": "Find a Gyuto",
+            "link": "shopify://collections/gyuto"
+          }
+        },
+        "column_6AEMxM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/nigara-sg2-kurouchi-tsuchime-kiritsuke-210-1.jpg",
+            "title": "Kiritsuke",
+            "text": "<p>Like a chef knife, but with more attitude and less rocking movement.</p>",
+            "link_label": "Find a Kiritsuke",
+            "link": "shopify://collections/kiritsuke"
+          }
+        },
+        "column_36bx3b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Kurosaki-Kokusen-Sujihiki-240-1.jpg",
+            "title": "Sujihiki",
+            "text": "<p>When you need a nice long clean cut. Carving slabs of meat or trimming fish.</p>",
+            "link_label": "Find a Sujihiki",
+            "link": "shopify://collections/sujihiki"
+          }
+        },
+        "column_GYbpHM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/glestain-honesuki-150-1.jpg",
+            "title": "Honesuki",
+            "text": "<p>The definitive poultry deboning knife.</p>",
+            "link_label": "Find a Honesuki",
+            "link": "shopify://collections/honesuki"
+          }
+        },
+        "column_rt7hFi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/mcusta-chinese-cleaver-1_f3d6059e-6c38-41b7-8fb2-9223ac7c5be3.jpg",
+            "title": "Chuka Bocho",
+            "text": "<p>For many classically trained Chinese chefs, these hefty blades are their chef's knife, performing nearly every kitchen task imaginable.</p>",
+            "link_label": "Find a Chuka Bocho",
+            "link": "shopify://collections/chuka-bocho"
+          }
+        },
+        "column_DwgbYj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/st-inox-deba-210-1.jpg",
+            "title": "Deba",
+            "text": "<p>For filleting fish the Japanese way.</p>",
+            "link_label": "Find a Deba",
+            "link": "shopify://collections/deba"
+          }
+        },
+        "column_xpTkzV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/tomoshibi-usuba-210-1.jpg",
+            "title": "Usuba",
+            "text": "<p>A Japanese veggie knife for specialized jobs.</p>",
+            "link_label": "Find a Usuba",
+            "link": "shopify://collections/usuba"
+          }
+        },
+        "column_xHQDPE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/oul-old-stock-shirogami-yanagiba-300.jpg",
+            "title": "Yanagiba",
+            "text": "<p>The sushi chef's best friend.</p>",
+            "link_label": "Find a Yanagiba",
+            "link": "shopify://collections/yanagiba"
+          }
+        },
+        "column_QbeHtd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/tojiro-bread-slicer.jpg",
+            "title": "Bread Knife",
+            "text": "<p>Because pre-sliced bread is for the weak.</p>",
+            "link_label": "Find a Bread Knife",
+            "link": "shopify://collections/bread"
+          }
+        },
+        "column_awhAbk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/arcos-6-1_2000x_9aa5d40e-bac6-4781-8776-9854cdd570d5.jpg",
+            "title": "Meat Cleaver",
+            "text": "<p>For big heavy jobs, like going through joints and smaller bones. </p>",
+            "link_label": "Find a Meat Cleaver",
+            "link": "shopify://collections/cleaver"
+          }
+        },
+        "column_k7rXHf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/kasumi-boning-knife-1_36c16448-c288-4ed1-8921-7a28d36ef2ef.jpg",
+            "title": "Boning Knives",
+            "text": "<p>Find both Japanese style and more European style boning knives here. </p>",
+            "link_label": "Find a Boning Knife",
+            "link": "shopify://collections/boning-knives"
+          }
+        },
+        "column_zyrCgU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/morinoki-soft-cheese-1.jpg",
+            "title": "Cheese Knives",
+            "text": "<p>Cheese, Gromit!</p>",
+            "link_label": "Find a Cheese knife",
+            "link": "shopify://collections/cheese-knives"
+          }
+        }
+      },
+      "block_order": [
+        "column_iz3Vgn",
+        "column_Kk76Gi",
+        "column_RbcMCV",
+        "column_YPEe79",
+        "column_d4BBkC",
+        "column_UMNbbA",
+        "column_wyA9Pp",
+        "column_KWgyqD",
+        "column_6AEMxM",
+        "column_36bx3b",
+        "column_GYbpHM",
+        "column_rt7hFi",
+        "column_DwgbYj",
+        "column_xpTkzV",
+        "column_xHQDPE",
+        "column_QbeHtd",
+        "column_awhAbk",
+        "column_k7rXHf",
+        "column_zyrCgU"
+      ],
+      "custom_css": [
+        "img.multicolumn-card__image {width: 100% !important;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_nQ39We": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_e7LF3J": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/knife_roll_flatlay_01_2000x_copy.jpg",
+            "title": "The Best Japanese Kitchen Knives for Professional Cooks and Chefs",
+            "text": "",
+            "link_label": "Read",
+            "link": "shopify://blogs/articles/the-best-japanese-kitchen-knives-for-professional-cooks-and-chefs"
+          }
+        },
+        "column_LCCUWQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/145509322_169149908041872_7167803859129646546_n_2000x_0b9f68f7-bbb8-4399-8561-0af5c12bbba9.jpg",
+            "title": "How to Choose a Japanese Kitchen Knife",
+            "text": "",
+            "link_label": "Read",
+            "link": "shopify://blogs/articles/how-to-choose-a-japanese-kitchen-knife"
+          }
+        },
+        "column_xDbJAh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5163_ce5b45c5-1a3a-4fdf-a080-2a9f4d0fcf2c_800x_copy.jpg",
+            "title": "How to Choose the Right Japanese Kitchen Knife to Gift",
+            "text": "",
+            "link_label": "Read",
+            "link": "shopify://blogs/articles/how-to-choose-the-right-knife-to-gift"
+          }
+        },
+        "column_zxL4bq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PXL_20210720_172143116_2000x_224359df-5280-4150-995b-22bc5718cb27.webp",
+            "title": "Kevin Kent’s top 5 Chef Knives for Home Cooks",
+            "text": "",
+            "link_label": "Read",
+            "link": "shopify://blogs/articles/kevin-kent-s-top-5-chef-knives-for-home-use"
+          }
+        }
+      },
+      "block_order": [
+        "column_e7LF3J",
+        "column_LCCUWQ",
+        "column_xDbJAh",
+        "column_zxL4bq"
+      ],
+      "settings": {
+        "title": "Learn more about Japanese Knives and finding the right knife for you.",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Find more articles and videos",
+        "button_link": "shopify://blogs/articles",
+        "color_scheme": "inverse",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "multicolumn_8G6wz6",
+    "product-grid",
+    "multicolumn_nQ39We"
+  ]
+}

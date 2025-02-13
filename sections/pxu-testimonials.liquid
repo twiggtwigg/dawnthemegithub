@@ -1,0 +1,487 @@
+{%- comment -%}
+  🧰 Testimonials section
+{%- endcomment -%}
+
+{%- liquid
+  assign section_heading = section.settings.section_heading | strip
+  assign text_color = section.settings.text_color
+-%}
+
+<section
+  id="{{ section.id }}"
+  class="
+    pxu-section
+    pxu-testimonials
+  "
+  style="
+    --pxu-section-heading-size: {{ section.settings.section_heading_size }}px;
+    --pxu-section-heading-size-mobile: {{ section.settings.section_heading_size_mobile }}px;
+    --pxu-section-text-size: {{ section.settings.text_size }}px;
+    --pxu-section-text-size-mobile: {{ section.settings.text_size_mobile }}px;
+    --pxu-section-text-color: {{ text_color }};
+    --pxu-section-quote-background-color: {{ section.settings.quote_background_color }};
+    --pxu-section-background-color: {{ section.settings.background_color }};
+    --pxu-section-placeholder-fill-color: {{ text_color | color_modify: 'alpha', 0.35 }};
+    --pxu-section-placeholder-background-color: {{ text_color | color_modify: 'alpha', 0.15 }};
+    --pxu-section-flickity-button-background-color: {{ text_color | color_modify: 'alpha', 0.10 }};
+    --pxu-section-padding-top: {{ section.settings.padding_top }}px;
+    --pxu-section-padding-bottom: {{ section.settings.padding_bottom }}px;
+    --pxu-section-margin-top: {{ section.settings.margin_top }}px;
+    --pxu-section-margin-bottom: {{ section.settings.margin_bottom }}px;
+    --pxu-carousel-item-space: var(--pxu-space-2);
+    --pxu-carousel-prev-next-position: -8px;
+  "
+  data-pxu-testimonials
+>
+  <script
+    type="application/json"
+    data-component-data
+  >
+    {
+      "id": "{{ section.id }}",
+      "handle": "pxu-testimonials",
+      "className": "TestimonialsSection",
+      "name": "Testimonials",
+      "version": "1.0.0",
+      "scriptsUrl": "{{ 'scripts.js' | asset_url | replace: '/assets/', '/compiled_assets/' }}"
+    }
+  </script>
+
+  <div class="pxu-testimonials__container pxu-section__container">
+    {%- if section_heading != blank -%}
+      <h2
+        class="
+          pxu-testimonials__section-heading
+          pxu-section__section-heading
+        "
+      >
+        {{- section_heading -}}
+      </h2>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div
+        class="
+          pxu-carousel
+          pxu-carousel--spaced
+          pxu-carousel--carousel-arrows
+          {% if section.blocks.size <= 3 -%}
+            pxu-carousel--mobile-only
+          {% endif %}
+        "
+      >
+        <div class="pxu-carousel__items" data-pxu-carousel>
+          {%- for block in section.blocks -%}
+            <div
+              id="{{ block.id }}"
+              class="pxu-carousel__item"
+              data-pxu-carousel-item
+              {{ block.shopify_attributes }}
+            >
+              {%- case block.type -%}
+                {%- when 'testimonial' -%}
+                  {%- liquid
+                    assign text = block.settings.text
+                    assign author = block.settings.author
+                    assign author_details = block.settings.author_details
+                    assign author_image = block.settings.author_image
+                    assign star_rating = block.settings.star_rating
+                    assign star_rating_remainder = star_rating | modulo: 1
+                    assign star_rating_rounded = star_rating | floor
+                  -%}
+
+                  <article
+                    class="
+                      pxu-testimonials__testimonial
+                      pxu-testimonials__testimonial--align-{{ section.settings.content_alignment }}
+                    "
+                  >
+                    {%- if star_rating != 'none' -%}
+                      <ul class="pxu-testimonials__star-ratings">
+                        {%- for star in (1..star_rating_rounded) -%}
+                          <li class="pxu-testimonials__star">
+                            <svg
+                              width="17"
+                              height="15"
+                              viewBox="0 0 17 15"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                            >
+                              <path
+                                d="M7.87297 0.449914C8.07216 -0.149971 8.92784 -0.149972 9.12703 0.449914L10.7173 5.23911H15.8386C16.4802 5.23911 16.7447 6.05513 16.2232 6.42587L12.0876 9.36607L13.672 14.1376C13.8718 14.7392 13.1794 15.2435 12.6603 14.8744L8.5 11.9167L4.33967 14.8744C3.82058 15.2435 3.12824 14.7392 3.32801 14.1376L4.91239 9.36607L0.776782 6.42587C0.255299 6.05513 0.519768 5.23911 1.16141 5.23911H6.28273L7.87297 0.449914Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </li>
+                        {%- endfor -%}
+
+                        {%- if star_rating_remainder > 0 -%}
+                          <li class="pxu-testimonials__star">
+                            <svg
+                              width="17"
+                              height="15"
+                              viewBox="0 0 17 15"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                            >
+                              <path
+                                d="M8 0C7.73628 0 7.47257 0.149972 7.37297 0.449914L5.78273 5.23911H0.661407C0.0197669 5.23911 -0.244702 6.05513 0.276781 6.42587L4.41238 9.36607L2.82801 14.1376C2.62824 14.7392 3.32057 15.2435 3.83967 14.8744L8 11.9167L8 0Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </li>
+                        {%- endif -%}
+                      </ul>
+                    {%- endif -%}
+
+                    {%- if text != blank -%}
+                      <blockquote
+                        class="
+                          pxu-testimonials__quote
+                          pxu-blockquote
+                          pxu-rte
+                        "
+                      >
+                        {{- text -}}
+                      </blockquote>
+                    {%- endif -%}
+
+                    {%- if author_image or author != blank or author_details != blank -%}
+                      <figure class="pxu-testimonials__author">
+                        {%- if author_image -%}
+                          <div
+                            class="
+                              pxu-testimonials__author-image-wrapper
+                              pxu-testimonials__author-image-wrapper--{{ section.settings.author_image_crop }}
+                            "
+                          >
+                            {{- author_image | image_url: width: 100 | image_tag: class: 'pxu-testimonials__author-image' -}}
+                          </div>
+                        {%- endif -%}
+
+                        <figcaption class="pxu-testimonials__author-caption">
+                          {%- if author != blank -%}
+                            <span class="pxu-testimonials__author-name">
+                              {{- author -}}
+                            </span>
+                          {%- endif -%}
+
+                          {%- if author_details != blank -%}
+                            <span class="pxu-testimonials__author-details">
+                              {{- author_details -}}
+                            </span>
+                          {%- endif -%}
+                        </figcaption>
+                      </figure>
+                    {%- endif -%}
+                  </article>
+              {%- endcase -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+<style type="text/css">
+.pxu-section{--pxu-current-bp:"xxs"}@media only screen and (min-width:480px){.pxu-section{--pxu-current-bp:"xs"}}@media only screen and (min-width:720px){.pxu-section{--pxu-current-bp:"small"}}@media only screen and (min-width:860px){.pxu-section{--pxu-current-bp:"medium"}}@media only screen and (min-width:1024px){.pxu-section{--pxu-current-bp:"large"}}.pxu-testimonials{background-color:var(--pxu-section-background-color);color:var(--pxu-section-text-color);margin-bottom:calc(var(--pxu-section-margin-bottom, 0)*.75);margin-top:calc(var(--pxu-section-margin-top, 0)*.75);padding:calc(var(--pxu-section-padding-top, 0)*.75) var(--pxu-space-4) calc(var(--pxu-section-padding-bottom, 0)*.75)}@media only screen and (min-width:480px){.pxu-testimonials{margin-bottom:var(--pxu-section-margin-bottom,0);margin-top:var(--pxu-section-margin-top,0);padding:var(--pxu-section-padding-top,0) var(--pxu-space-6) var(--pxu-section-padding-bottom,0)}}.pxu-testimonials .flickity-enabled .pxu-carousel__item{box-sizing:border-box;width:100%}@media only screen and (min-width:860px){.pxu-testimonials .flickity-enabled .pxu-carousel__item{width:33.33%}.pxu-testimonials .pxu-carousel__items:not(.flickity-enabled){-moz-column-gap:var(--pxu-space-6);column-gap:var(--pxu-space-6);display:grid;grid-template-columns:repeat(3,1fr)}}.pxu-testimonials__testimonial{background-color:var(--pxu-section-quote-background-color);display:flex;flex-direction:column;padding:var(--pxu-space-8);row-gap:var(--pxu-space-6)}.pxu-testimonials__testimonial--align-left{text-align:left}.pxu-testimonials__testimonial--align-center{align-items:center;text-align:center}.pxu-testimonials__testimonial--align-right{align-items:flex-end;text-align:right}.pxu-testimonials__author{align-items:center;-moz-column-gap:var(--pxu-space-3);column-gap:var(--pxu-space-3);display:flex;margin:0}.pxu-testimonials__testimonial--align-center .pxu-testimonials__author{flex-direction:column;row-gap:var(--pxu-space-2)}.pxu-testimonials__testimonial--align-right .pxu-testimonials__author{flex-direction:row-reverse}.pxu-testimonials__author-image-wrapper{height:45px;line-height:0;width:45px}.pxu-testimonials__author-image-wrapper--adapt{height:auto}.pxu-testimonials__author-image-wrapper--circle{border-radius:50%;overflow:hidden}.pxu-testimonials__author-image{height:100%;-o-object-fit:cover;object-fit:cover;-o-object-position:center center;object-position:center center;width:100%}.pxu-testimonials__author-caption{display:flex;flex-direction:column;row-gap:var(--pxu-space-1)}.pxu-testimonials__author-name{font-size:16px}.pxu-testimonials__author-details{font-size:13px}.pxu-testimonials__author-details,.pxu-testimonials__author-name{color:var(--pxu-section-text-color)}.pxu-testimonials__author-details a,.pxu-testimonials__author-name a{color:inherit}.pxu-testimonials__star-ratings{-moz-column-gap:var(--pxu-space-1);column-gap:var(--pxu-space-1);display:flex;list-style:none;margin:0;padding:0}.pxu-testimonials__star{margin-bottom:0}.pxu-testimonials__quote{color:var(--pxu-section-text-color);font-size:var(--pxu-section-text-size-mobile)}@media only screen and (min-width:860px){.pxu-testimonials__quote{font-size:var(--pxu-section-text-size)}}</style>
+{% javascript %}
+const { Section, Carousel } = window.PxuThemeSections;
+
+class TestimonialsSection extends Section {
+  constructor($root) {
+    super($root);
+    this.$root = $root;
+    this.id = $root.id;
+    this.data = this.loadData();
+    this.carousel = null;
+
+    this.onMount();
+  }
+
+  onMount() {
+    const options = {
+      prevNextButtons: true,
+      groupCells: 3,
+      cellAlign: 'left'
+    };
+
+
+    const mobileOptions = {
+      draggable: true,
+      cellAlign: 'left'
+    };
+
+    this.carousel = new Carousel(this.$root, options, mobileOptions);
+    this.carousel.onMount();
+  }
+
+  onUnmount() {
+    this.carousel.onUnmount();
+    this.carousel = null;
+  }
+
+  onBlockSelect(event) {
+    const $block = event.target;
+    this.carousel.selectSlide($block);
+  }
+}
+
+document.querySelectorAll('[data-pxu-testimonials]').forEach(($section) => {
+  Section.init($section, TestimonialsSection);
+});
+
+// export class for theme editor instance management
+if (Shopify.designMode) {
+  window.PxuThemeSections.TestimonialsSection = TestimonialsSection;
+}
+{% endjavascript %}
+{% schema %}
+{
+  "name": "t:pxu_sections.sections.testimonials.name",
+  "class": "pxu-testimonials-section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "section_heading",
+      "label": "t:pxu_sections.common.heading.section_heading",
+      "default": "Testimonials"
+    },
+    {
+      "type": "range",
+      "id": "section_heading_size",
+      "min": 16,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:pxu_sections.common.heading.heading_size",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_heading_size_mobile",
+      "min": 16,
+      "max": 64,
+      "step": 1,
+      "unit": "px",
+      "label": "t:pxu_sections.common.heading.heading_size_mobile",
+      "default": 30
+    },
+    {
+      "type": "select",
+      "id": "content_alignment",
+      "label": "t:pxu_sections.common.layout.content_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:pxu_sections.common.layout.left"
+        },
+        {
+          "value": "center",
+          "label": "t:pxu_sections.common.layout.center"
+        },
+        {
+          "value": "right",
+          "label": "t:pxu_sections.common.layout.right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "author_image_crop",
+      "label": "t:pxu_sections.sections.testimonials.author_image_crop.label",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:pxu_sections.sections.testimonials.author_image_crop.option_1.label"
+        },
+        {
+          "value": "square",
+          "label": "t:pxu_sections.sections.testimonials.author_image_crop.option_2.label"
+        },
+        {
+          "value": "circle",
+          "label": "t:pxu_sections.sections.testimonials.author_image_crop.option_3.label"
+        }
+      ],
+      "default": "circle"
+    },
+    {
+      "type": "header",
+      "content":"t:pxu_sections.common.typography.block_typography"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "t:pxu_sections.common.text.text_size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "text_size_mobile",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "t:pxu_sections.common.text.text_size_mobile",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content":"t:pxu_sections.common.color.color"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:pxu_sections.common.color.text_color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "quote_background_color",
+      "label": "t:pxu_sections.sections.testimonials.quote_background_color.label",
+      "default": "#F1F1F1"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:pxu_sections.common.color.background_color",
+      "default": "#F8F8F8"
+    },
+    {
+      "type": "header",
+      "content": "t:pxu_sections.common.padding.header"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:pxu_sections.common.padding.top",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:pxu_sections.common.padding.bottom",
+      "default": 32
+    },
+    {
+      "type": "header",
+      "content": "t:pxu_sections.common.margin.header"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:pxu_sections.common.margin.top",
+      "default": 64
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:pxu_sections.common.margin.bottom",
+      "default": 64
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "t:pxu_sections.sections.testimonials.blocks.testimonial.name",
+      "settings": [
+        {
+          "type": "select",
+          "id": "star_rating",
+          "label": "t:pxu_sections.sections.testimonials.blocks.testimonial.star_rating.label",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:pxu_sections.sections.testimonials.blocks.testimonial.star_rating.option_1.label"
+            },
+            {
+              "value": "4",
+              "label": "t:pxu_sections.sections.testimonials.blocks.testimonial.star_rating.option_2.label"
+            },
+            {
+              "value": "4.5",
+              "label": "t:pxu_sections.sections.testimonials.blocks.testimonial.star_rating.option_3.label"
+            },
+            {
+              "value": "5",
+              "label": "t:pxu_sections.sections.testimonials.blocks.testimonial.star_rating.option_4.label"
+            }
+          ],
+          "default": "none"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:pxu_sections.common.text.name",
+          "default": "t:pxu_sections.sections.testimonials.blocks.testimonial.text.default_html"
+        },
+        {
+          "type": "image_picker",
+          "id": "author_image",
+          "label": "t:pxu_sections.sections.testimonials.blocks.testimonial.author_image.label"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "author",
+          "label": "t:pxu_sections.sections.testimonials.blocks.testimonial.author.label",
+          "default": "t:pxu_sections.sections.testimonials.blocks.testimonial.author.default"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "author_details",
+          "label": "t:pxu_sections.sections.testimonials.blocks.testimonial.author_details.label",
+          "default": "t:pxu_sections.sections.testimonials.blocks.testimonial.author_details.default"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": [
+      "header",
+      "footer"
+    ]
+  },
+  "presets": [
+    {
+      "name": "t:pxu_sections.sections.testimonials.name",
+      "blocks": [
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
