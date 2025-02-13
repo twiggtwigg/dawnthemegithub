@@ -183,6 +183,7 @@
         "featured_collection_FVhDpU",
         "featured_collection_RyQNaa"
       ],
+      "disabled": true,
       "settings": {
         "title": "BEST SELLERS",
         "content_alignment": "left",
@@ -644,10 +645,10 @@
     "collection_slider_3zcmt8",
     "collection_list_xFhyJC",
     "shop_regions_B9GyEN",
+    "featured_collection_8ydXjd",
     "image_banner_36wGr3",
     "multicolumn_4YBcDY",
     "featured_collection_EWRm7N",
-    "featured_collection_8ydXjd",
     "custom_liquid_cikg3e",
     "recent_products_f9kWMw",
     "image_with_text_8WL9cR",
