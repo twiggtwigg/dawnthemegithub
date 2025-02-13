@@ -429,6 +429,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }
  });
 </script>
-
+{% if template == 'index' %}
+<style>
+#MainContent { margin-top: -133px; }
+@media (max-width: 767px) {
+#MainContent { margin-top: -107px !important; }
+}
+</style>
+{% endif %}
+<style>
+sticky-header { background: transparent !important; }
+</style>
   </body>
 </html>
