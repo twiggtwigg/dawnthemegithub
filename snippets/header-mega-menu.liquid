@@ -12,6 +12,7 @@
         {%- if link.links != blank -%}
           <header-menu>
             <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
+            <div class="mega-menu-connector"><holder></holder></div>
               <summary
                 id="HeaderMenu-{{ link.handle }}"
                 class="header__menu-item list-menu__item link focus-inset"
@@ -92,3 +93,43 @@
     {%- endfor -%}
   </ul>
 </nav>
+
+<style>
+  .mega-menu-connector {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mega-menu-connector:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .menu-6 ul.mega-menu__list.page-width.mega-menu__list--condensed {
+    display: block !important;
+  }
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.mega-menu').hover(
+      function() {
+        $(this).find('.mega-menu__content').toggleClass('mega-menu-open');
+      }
+    );
+
+    document.querySelectorAll(".header__inline-menu details.mega-menu").forEach(item => {
+      const toggleOpen = (state) => item.toggleAttribute("open", state);
+      item.addEventListener("mouseover", () => toggleOpen(true));
+      item.addEventListener("mouseleave", () => toggleOpen(false));
+      item.querySelector(".mega-menu__content").addEventListener("mouseover", () => toggleOpen(true));
+      item.querySelector(".mega-menu__content").addEventListener("mouseleave", () => toggleOpen(false));
+    });
+  });
+</script>
