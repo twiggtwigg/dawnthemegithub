@@ -72,29 +72,42 @@
   }
 </style>
 
-{%- style -%}
-  .header {
-    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
-  }
+.header{
+  padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
+  padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
+}
 
+.section-header {
+  margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+}
+
+@media screen and (min-width: 750px) {
   .section-header {
-    position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
-    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+    margin-bottom: {{ section.settings.margin_bottom }}px;
   }
+}
 
-  @media screen and (min-width: 750px) {
-    .section-header {
-      margin-bottom: {{ section.settings.margin_bottom }}px;
-    }
+@media screen and (min-width: 990px) {
+  .header{
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
   }
+}
+.mega-menu-connector {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.mega-menu-connector:after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
 
-  @media screen and (min-width: 990px) {
-    .header {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
+
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 
