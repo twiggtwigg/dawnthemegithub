@@ -430,26 +430,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  });
 </script>
 
-<script>	
-  function bindMouseOverToMegaMenu (item) {
-    item.addEventListener("mouseover", () => {
-        item.setAttribute("open", true);
-        item.querySelector(".mega-menu__content").addEventListener("mouseover", () => {
-          item.setAttribute("open", true);
-        });
-        item.querySelector(".mega-menu__content").addEventListener("mouseleave", () => {
-          item.removeAttribute("open");
-        });
-      item.addEventListener("mouseleave", () => {
-        item.removeAttribute("open");
-      });
-    });
-  }
-  let items = document.querySelector(".header__inline-menu").querySelectorAll("details.mega-menu");
-  items.forEach(bindMouseOverToMegaMenu);
-  
-</script>
-
-
   </body>
 </html>
