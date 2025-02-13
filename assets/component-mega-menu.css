@@ -2,7 +2,9 @@
   position: static;
 }
 
-.mega-menu__content {
+.mega-menu__content {.mega-menu__content {
+    background: rgba(0,0,0,.6) !important;
+}
   background-color: rgb(var(--color-background));
   border-left: 0;
   border-radius: 0;
