@@ -129,7 +129,7 @@
         "buttons_XhtMNp"
       ],
       "settings": {
-        "image": "shopify://shop_images/smm-2023-assortment-5.jpg",
+        "image": "shopify://shop_images/variety_set_01.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -209,7 +209,7 @@
         "layout": "full_bleed",
         "slide_height": "large",
         "slider_visual": "dots",
-        "auto_rotate": false,
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "image_behavior": "none",
         "show_text_below": true,
