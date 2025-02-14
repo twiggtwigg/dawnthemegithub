@@ -28,7 +28,7 @@
       ],
       "disabled": true,
       "settings": {
-        "color_scheme": "accent-2",
+        "color_scheme": "scheme-f8068118-e995-45a8-aaa9-a7092ddca945",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
@@ -56,7 +56,7 @@
         ".h5 {font-family: var(--font-body-family); font-style: var(--font-body-style); font-weight: var(--font-body-weight);}"
       ],
       "settings": {
-        "color_scheme": "inverse",
+        "color_scheme": "background-2",
         "show_line_separator": true,
         "show_social": true,
         "auto_rotate": false,
