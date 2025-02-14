@@ -1,37 +1,6 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
-    <style>
-div#menu-drawer {
-    background-color: transparent !important;
-    border: none !important;
-}
-
-summary#HeaderDrawer-menu {
-    background-color: transparent !important;
-}
-
-div#link-menu {
-    background-color: transparent !important;
-}
-
-div#childlink-info {
-    background-color: transparent !important;
-}
-
-body:has(details[open].menu-opening>.menu-drawer__submenu#childlink-info) div#link-menu > .menu-drawer__inner-submenu > button,
-body:has(details[open].menu-opening>.menu-drawer__submenu#childlink-info) div#link-menu > .menu-drawer__inner-submenu > ul > li > a,
-body:has(details[open].menu-opening>.menu-drawer__submenu#childlink-info) div#link-menu > .menu-drawer__inner-submenu > ul > li > details > summary {
-    opacity: 0 !important;
-}
-
-@media only screen and (min-width: 990px) {
-    .header__icon--menu[aria-expanded='true']::before {
-        display: none !important;
-    }    
-}
-</style>
-    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
